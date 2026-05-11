@@ -1,0 +1,50 @@
+/* Container for the whole mission section */
+.missionSection {
+
+    text-align: center;
+}
+
+/* The "Our Mission" Yellow Badge */
+.missionBadge {
+    background-color: #FDF033; /* Bright yellow */
+    color: #000000;
+    font-weight: 700;
+    font-size: 2rem;
+    padding: 16px 80px;
+    border-radius: 16px;
+    display: inline-block;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+}
+
+/* The Description Paragraph */
+.missionDescription {
+    font-size: 1.25rem;
+    color: #2D2D2D;
+    max-width: 750px; 
+    margin: 0 auto 60px auto;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+/* Parent for the Next.js Image component */
+.imageWrapper {
+
+   
+    margin: 0 auto;
+    position: relative;
+    aspect-ratio: 16 / 9; /* Maintains cinematic Figma ratio */
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .missionBadge {
+        font-size: 1.5rem;
+        padding: 12px 40px;
+    }
+    .missionDescription {
+        font-size: 1.1rem;
+    }
+}
