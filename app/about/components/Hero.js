@@ -14,7 +14,7 @@ export default function Hero() {
             <div className="col-lg-5">
 
               <h1>
-                Strategic. Human-Centered. Tech That Works for People.
+                Strategic. Human-Centered. Tech That Works for People. 111
               </h1>
 
               <p>
