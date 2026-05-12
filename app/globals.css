@@ -16,8 +16,102 @@ body {
 /* ==========================================================================
    2. LAYOUT CONTAINERS
    ========================================================================== */
+
 .container-outer {  
     background: #d9d9d9;
+}
+
+.our-philosophy-heading {
+  width: 800px;
+  background-color: #eef430;
+  padding: 12px 24px;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .our-philosophy-heading {
+    width: 100%;
+  }
+}
+
+.what-we-do-new {
+  width: 800px;
+  margin: 0 auto;
+
+  background: #000;
+  color: #fff;
+
+  padding: 12px 40px;
+  border-radius: 4px;
+
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .what-we-do-new {
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+  }
+}
+
+.philosophy-content h3 {
+  font-family: 'Albert Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #000;
+  margin-bottom: 28px;
+}
+
+.philosophy-content h2 {
+  font-family: 'Albert Sans', sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 110%;
+  letter-spacing: 0%;
+  color: #000;
+  margin-bottom: 22px;
+}
+
+.philosophy-content p {
+  font-family: 'Albert Sans', sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 0%;
+  color: #000;
+  margin: 0;
+
+  max-width: 220px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .philosophy-content h2 {
+    font-size: 34px;
+  }
+
+  .philosophy-content p {
+    max-width: 100%;
+    line-height: 1.4;
+  }
+}
+
+
+.sets-apart h4 {
+    font-family: 'Albert Sans', sans-serif;
+    font-weight: 500 !important;
+    font-style: italic !important;
+    font-size: 16px !important;
+   
+    letter-spacing: 0%;
+    text-align: center;
+    color: #000;
 }
 
 .container-inner {
@@ -26,6 +120,67 @@ body {
     width: 100%;
     background-color: #ffffff;
 }
+
+
+/* app/components/Banner.css */
+
+.banner-container {
+  position: relative;
+  background: #000;
+  padding: 80px 100px;
+  overflow: hidden;
+}
+
+.content-wrapper h2 {
+  color: #fff;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0;
+}
+
+/* Yellow bottom border */
+.what-we-do-heading {
+  display: inline-block;
+  width: 800px;
+  background-color: #eef430;
+  padding: 12px 40px;
+  margin-bottom: 24px;
+  font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+  .what-we-do-heading {
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+  }
+}
+
+
+.bg-custome {
+  background-color: #F5F5F5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .banner-container {
+    padding: 50px 25px;
+  }
+
+  .content-wrapper h2 {
+    font-size: 34px;
+  }
+
+  .yellow-border {
+    width: 140px;
+    height: 6px;
+  }
+}
+
+
+
+
 
 /* ==========================================================================
    3. HEADER & NAVIGATION

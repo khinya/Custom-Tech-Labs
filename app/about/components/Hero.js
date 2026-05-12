@@ -11,19 +11,22 @@ export default function Hero() {
 
           <div className="row align-items-center">
 
-            <div className="col-lg-5">
+            <div className="col-lg-6">
 
               <h1>
-                Strategic. Human-Centered. Tech That Works for People. 
-              </h1>
+               
+                Strategic. Human-Centered. Tech That Works for People.
+               
+              </h1> 
 
               <p>
-              CustomTech Labs is a joint venture between Laxmaya Technologies, a global technology and enterprise engineering company, and Small Biz Marketing (SBM), a U.S.-based strategy and growth marketing agency.
+              <b> CustomTech Labs is a joint venture between Laxmaya Technologies, a global technology and enterprise engineering company, and Small Biz Marketing (SBM), a U.S.-based strategy and growth marketing agency.
+                </b>
               </p>
 
               <p>Together, we combine deep technical expertise with strategic business intelligence to create technology that doesn’t just function—it feels intuitive, efficient, and natural to the people who use it.</p>
 
-              <button className="btn btn-warning btn-sm me-2">
+              <button className="btn-warning-custom">
               Download Portfolio
               </button>
 
@@ -38,5 +41,7 @@ export default function Hero() {
       </div>
 
     </section>
+
+    
   );
 }

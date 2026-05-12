@@ -15,25 +15,30 @@ export default function MainBanner() {
 
           <div className="row align-items-center">
 
-            <div className="col-lg-5">
+          <div className="col-lg-6">
+  <h1 className="display-4 fw-bold mb-4">
+    E-comerce That Works The Way Your Business Actually Runs
+  </h1>
 
-              <h1>
-                Strategic. Human-Centered. Tech That Works for People.
-              </h1>
+  <p className="lead mb-3">
+    At Custom Labs, we deliver e-commerce development services that 
+    feel simple to use, easy to manage, and built to grow with you.
+  </p>
 
-              <p>
-              CustomTech Labs is a joint venture between Laxmaya Technologies, a global technology and enterprise engineering company, and Small Biz Marketing (SBM), a U.S.-based strategy and growth marketing agency.
-              </p>
+  <p className="mb-4">
+    Your e-commerce system shouldn’t slow you down— it should move 
+    your business forward.
+  </p>
 
-              <p>Together, we combine deep technical expertise with strategic business intelligence to create technology that doesn’t just function—it feels intuitive, efficient, and natural to the people who use it.</p>
-
-              <button className="btn btn-warning btn-sm me-2">
-              Download Portfolio
-              </button>
-
-            
-
-            </div>
+  <div className="d-flex gap-2">
+    <button className="btn btn-custom-yellow fw-bold px-4 py-2">
+      View Our Portfolio
+    </button>
+    <button className="btn btn-custom-yellow fw-bold px-4 py-2">
+      Work With Us
+    </button>
+  </div>
+</div>
 
           </div>
 

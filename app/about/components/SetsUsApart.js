@@ -1,7 +1,7 @@
 export default function SetsUsApart() {
     return (
         <>
-            <section className="container-fluid p-0 overflow-hidden">
+            <section className="container-fluid p-0 overflow-hidden sets-apart">
                 <div 
                     className="container my-5 py-5 text-center d-flex flex-column align-items-center gap-4"
                     style={{ backgroundColor: '#f5f5f5', borderRadius: '1rem' }}
@@ -35,21 +35,21 @@ export default function SetsUsApart() {
                         style={{ backgroundColor: '#979797', borderRadius: '1rem' }}
                     >
                         <div className="col-4 border-end border-white">
-                            <h6 style={{ color: '#eff430' }} className="fw-bold mb-1">EMPATHY</h6>
-                            <p className="mb-0 small">User</p>
-                            <p className="mb-0 small">Behavior First</p>
+                            <h6 style={{ color: '#eff430' }} className="mb-1">EMPATHY</h6>
+                            <p className="mb-0 small fw-bold ">User</p>
+                            <p className="mb-0 small fw-bold ">Behavior First</p>
                         </div>
                         
                         <div className="col-4">
-                            <h6 style={{ color: '#eff430' }} className="fw-bold mb-1">ENGINEERING</h6>
-                            <p className="mb-0 small">Enterprise-Grade</p>
-                            <p className="mb-0 small">System</p>
+                            <h6 style={{ color: '#eff430' }} className=" mb-1">ENGINEERING</h6>
+                            <p className="mb-0 small fw-bold">Enterprise-Grade</p>
+                            <p className="mb-0 small fw-bold">System</p>
                         </div>
                         
                         <div className="col-4 border-start border-white">
-                            <h6 style={{ color: '#eff430' }} className="fw-bold mb-1">OUTCOMES</h6>
-                            <p className="mb-0 small">Real Business</p>
-                            <p className="mb-0 small">Impact</p>
+                            <h6 style={{ color: '#eff430' }} className=" mb-1">OUTCOMES</h6>
+                            <p className="mb-0 small fw-bold">Real Business</p>
+                            <p className="mb-0 small fw-bold">Impact</p>
                         </div>
                     </div>
                 </div>

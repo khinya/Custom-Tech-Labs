@@ -11,7 +11,7 @@ import OurPhilosophy from "./components/OurPhilosophy";
 import ImpactSection from "../../components/ImpactSection";
 import Footer from "../../components/Footer";
 
-
+import CategoryStrip from "../../components/CategoryStrip";
 
 
 export default function About() {
@@ -26,9 +26,12 @@ export default function About() {
           <section className="p-0">
             <Hero />
           </section>
-    <section className="p-0">
-            <ImpactSection />
+           <section>
+            <CategoryStrip />
           </section>
+
+
+
           {/* Mission Section */}
           <section className="p-0">
             <Mission />

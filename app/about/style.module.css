@@ -22,21 +22,21 @@
     font-size: 1.25rem;
     color: #2D2D2D;
     max-width: 750px; 
-    margin: 0 auto 60px auto;
+    margin: 0 auto 30px auto;
     line-height: 1.6;
     font-weight: 500;
 }
 
 /* Parent for the Next.js Image component */
 .imageWrapper {
+  position: relative;
+  width: 942px;
+  height: 500px;
+  opacity: 1;
+  overflow: hidden;
 
-   
-    margin: 0 auto;
-    position: relative;
-    aspect-ratio: 16 / 9; /* Maintains cinematic Figma ratio */
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  /* Center */
+  margin: 0 auto;
 }
 
 @media (max-width: 768px) {

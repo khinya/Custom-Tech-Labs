@@ -21,12 +21,15 @@ export default function WhatDesign() {
     ];
 
     return (
-        <section className="container py-5">
+  <section
+  className="container py-5"
+  style={{ backgroundColor: '#F5F5F5' }}
+>
             {/* Header */}
             <div className="d-flex justify-content-center mb-5">
-                <h1 className="fw-bold fs-2 py-2 px-md-5 text-center bg-black text-white rounded-1">
-                    What We Do
-                </h1>
+              <h1 className="what-we-do-new">
+  What We Do
+</h1>
             </div>
 
             {/* Cards Grid */}
@@ -57,11 +60,15 @@ export default function WhatDesign() {
                             </div>
 
                             {/* Card Content */}
-                            <div className="pt-4 mt-2">
-                                <h3 className="fs-6 fw-bold text-uppercase mb-3">{item.name}</h3>
-                                <h2 className="fs-4 fw-normal mb-3">{item.title}</h2>
-                                <p className="fs-6 fw-normal text-secondary mb-0">{item.desc}</p>
-                            </div>
+                        <div className="pt-4 mt-2 philosophy-content">
+  <h3>{item.name}</h3>
+
+  <h2>
+    {item.title}
+  </h2>
+
+  <p>{item.desc}</p>
+</div>
                         </div>
                     </div>
                 ))}

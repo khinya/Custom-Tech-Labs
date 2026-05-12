@@ -1,0 +1,37 @@
+.container {
+  position: relative;
+  width: 1281px;
+  height: 148px;
+  background: #000000;
+  border-radius: 5px;
+  /* The blue top border from your image */
+  border-top: 2px solid #00A3FF; 
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding-left: 60px;
+}
+
+/* This creates the white geometric cutout */
+.container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  /* The Magic: Defines the white area shape */
+  clip-path: polygon(100% 0, 42% 0, 48% 50%, 100% 50%);
+  z-index: 1;
+}
+
+.text {
+  position: relative;
+  z-index: 2; /* Keeps text above the white shape */
+  color: #ffffff;
+  font-family: 'Albert Sans', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 100%;
+}

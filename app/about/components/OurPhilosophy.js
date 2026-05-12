@@ -7,9 +7,9 @@ export default function OurPhilosophy() {
                 <div className="row justify-content-center mb-5">
                     <div className="col-auto">
                         {/* Heading */}
-                        <h1 className="fw-bold px-4 py-2 text-center" style={{ backgroundColor: '#eef430' }}>
-                            Our Philosophy
-                        </h1>
+                        <h1 className="our-philosophy-heading">
+  Our Philosophy
+</h1>
                     </div>
                 </div>
 
@@ -43,7 +43,7 @@ export default function OurPhilosophy() {
                     <div className="col-12 col-lg-5 text-center">
                         <div className="position-relative mx-auto" style={{ maxWidth: '450px' }}>
                             <Image
-                                className="img-fluid rounded-4 shadow-sm"
+                                className="img-fluid shadow-sm"
                                 src="/images/philosophy.webp "
                                 width={409}
                                 height={307}

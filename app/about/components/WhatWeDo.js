@@ -25,15 +25,20 @@ export default function WhatWeDo() {
             <div className="row justify-content-center text-center mb-5">
                 <div className="col-12 col-lg-10">
                     {/* Header Badge */}
-                    <h1 className="d-inline-block fw-bold fs-2 py-2 px-md-5 mb-4" style={{ backgroundColor: '#eef430' }}>
-                        What We Do
-                    </h1>
+                   <h1 class="what-we-do-heading">
+  What We Do
+</h1>
                     
-                    <h2 className="fs-4 fw-semibold px-md-5">
-                        We design and build custom enterprise solutions for small to mid-sized businesses, combining innovation with real-world usability.
-                        <br /><br />
-                        <span className="fw-normal fst-italic">Our services include:</span>
-                    </h2>
+                  <h3 className="px-md-5 text-start">
+  We design and build custom enterprise solutions for small to mid-sized businesses, combining innovation with real-world usability.
+  
+  <br />
+  <br />
+
+  <span className="fw-normal fst-italic">
+    Our services include:
+  </span>
+</h3>
                 </div>
             </div>
 
@@ -42,7 +47,7 @@ export default function WhatWeDo() {
                 {services.map((item, idx) => (
                     <div key={idx} className="col-12 col-md-6 col-lg-5">
                         <div 
-                            className="h-100 p-4 shadow-lg d-flex flex-column justify-content-between align-items-start position-relative bg-white"
+                            className="h-100 p-4 shadow-lg d-flex flex-column justify-content-between align-items-start position-relative bg-custome"
                             style={{ 
                                 borderLeft: '14px solid #eff430',
                                 minHeight: '160px'
