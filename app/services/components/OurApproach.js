@@ -4,59 +4,130 @@ import { apperData } from "./approachData";
 
 export default function OurApproach() {
   return (
-    <section className="container py-5">
-      <div className="d-flex flex-column align-items-center gap-4">
+    <section 
+      className="container-fluid py-5" 
+      style={{ fontFamily: "'Albert Sans', sans-serif" }}
+    >
+      <div className="d-flex flex-column align-items-center">
         
-        {/* Section Badge */}
-        <h2 
-          className="badge bg-black px-4 py-2 fw-bold" 
-          style={{ color: '#eef430', fontSize: '1.25rem', borderRadius: '12px' }}
+        {/* 1. Section Badge - Matches image_560b68.png pill shape */}
+        <div 
+          className="mb-4 text-center" 
+          style={{ 
+            backgroundColor: '#000', 
+            padding: '10px 40px', 
+            borderRadius: '12px',
+            maxWidth: 'fit-content'
+          }}
         >
-          Our Approach
-        </h2>
+          <h2 
+            className="m-0"
+            style={{ 
+              color: '#EEF430', 
+              fontSize: 'clamp(18px, 4vw, 24px)', // Responsive font size
+              fontWeight: '400', 
+              lineHeight: '100%'
+            }}
+          >
+            Our Approach
+          </h2>
+        </div>
 
-        {/* Section Title */}
-        <h1 className="fw-bold text-center mb-4 display-6">
+        {/* 2. Main Title - SemiBold 32px */}
+        <h1 
+          className=" text-center px-3" 
+          style={{ 
+            fontSize: 'clamp(24px, 5vw, 32px)', 
+            fontWeight: '600', 
+            lineHeight: '1.1',
+            color: '#000'
+          }}
+        >
           Our Approach to E-Commerce Development
         </h1>
 
-        {/* Approach Cards Mapping */}
-        {apperData.map((group, groupIdx) => (
-          <div key={groupIdx} className="row w-100 g-4 mt-2">
-            {group.items.map((item, itemIdx) => (
-              <div key={itemIdx} className="col-12 col-md-6">
+        {/* 3. Subtitle - Italic 16px */}
+        <p 
+          className="mb-5 text-center px-3"
+          style={{ 
+            fontSize: '16px', 
+            fontWeight: '400', 
+            fontStyle: 'italic', 
+            color: '#000'
+          }}
+        >
+          Our guiding rules behind every e-commerce platform we craft
+        </p>
+
+        {/* 4. Approach Grid - Responsive Column Logic */}
+        <div className="container">
+          <div className="row g-4 justify-content-center">
+            {apperData.flatMap(group => group.items).map((item, idx) => (
+              <div key={idx} className="col-12 col-lg-6">
                 <div 
-                  className="h-100 p-4 bg-white shadow-sm"
+                  className="h-100 p-4 bg-white"
                   style={{ 
-                    borderLeft: '25px solid #eef430',
-                    boxShadow: '0 1rem 3rem rgba(0,0,0,.075)' 
+                    borderLeft: 'clamp(15px, 3vw, 25px) solid #EEF430', // Smaller border on mobile
+                    boxShadow: '0px 10px 30px rgba(0, 0, 0, 0.06)',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'center',
+                    minHeight: '140px'
                   }}
                 >
-                  <h3 className="fw-bold mb-2" style={{ color: '#034a27', fontSize: '1.5rem' }}>
+                  <h3 
+                    className="mb-2" 
+                    style={{ 
+                      color: '#034a27', 
+                      fontSize: 'clamp(20px, 4vw, 24px)', 
+                      fontWeight: '700',
+                      lineHeight: '1.1'
+                    }}
+                  >
                     {item.title}
                   </h3>
-                  <p className="mb-0 text-muted lh-relaxed" style={{ fontSize: '16px' }}>
+                  <p 
+                    className="m-0" 
+                    style={{ 
+                      fontSize: '16px', 
+                      fontWeight: '400', 
+                      lineHeight: '1.4',
+                      color: '#333'
+                    }}
+                  >
                     {item.desc}
                   </p>
                 </div>
               </div>
             ))}
           </div>
-        ))}
+        </div>
 
-        {/* Call to Action Buttons */}
+        {/* 5. Call to Action Buttons - Responsive stacking */}
         <div className="d-flex flex-column flex-sm-row gap-3 mt-5">
           <Link 
             href="/" 
-            className="btn fw-bold px-3 py-1 text-black d-flex align-items-center justify-content-center" 
-            style={{ backgroundColor: '#EEF430', fontSize: '14px', borderRadius: '3px', minWidth: '150px', height: '34px' }}
+            className="btn border-0 fw-bold px-4 py-2 text-center" 
+            style={{ 
+              backgroundColor: '#EEF430', 
+              color: '#000', 
+              fontSize: '14px', 
+              borderRadius: '4px',
+              minWidth: '180px'
+            }}
           >
-            View our Portfolio
+            View Our Portfolio
           </Link>
           <Link 
             href="/solutionservice" 
-            className="btn fw-bold px-3 py-1 text-black d-flex align-items-center justify-content-center" 
-            style={{ backgroundColor: '#EEF430', fontSize: '14px', borderRadius: '3px', minWidth: '150px', height: '34px' }}
+            className="btn border-0 fw-bold px-4 py-2 text-center" 
+            style={{ 
+              backgroundColor: '#EEF430', 
+              color: '#000', 
+              fontSize: '14px', 
+              borderRadius: '4px',
+              minWidth: '180px'
+            }}
           >
             Work With Us
           </Link>

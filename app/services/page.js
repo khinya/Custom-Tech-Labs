@@ -38,7 +38,7 @@ export default function SolutionService() {
             <BuyingOnline />
           </section>
 
-          <section className="p-0">
+          <section className="p-0" style={{ backgroundColor: '#F5F5F5' }}>
             <OurApproach />
           </section>
 

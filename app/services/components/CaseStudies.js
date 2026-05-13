@@ -14,41 +14,39 @@ import 'swiper/css/pagination';
 const slides = [
     {
         image: "/servicesolimg/caseStudio.png",
-        title: "Healthcare Operations",
-        description: "We’ve built systems for healthcare operations, retail platforms...",
+        title: "Industries We Transform",
+        description: "We’ve built systems for healthcare operations, retail platforms, educational ecosystems, construction workflows, and manufacturing environments helping them replace inefficient processes with systems that reduce errors and improve visibility.",
     },
-    {
-        image: "/servicesolimg/caseStudio.png", // Using same image for demo
-        title: "Retail Ecosystems",
-        description: "Helping retail brands scale their digital footprint...",
-    },
-    {
+      {
         image: "/servicesolimg/caseStudio.png",
-        title: "Manufacturing Precision",
-        description: "Replacing inefficient manual processes with automated visibility...",
+        title: "Industries We Transform",
+        description: "We’ve built systems for healthcare operations, retail platforms, educational ecosystems, construction workflows, and manufacturing environments helping them replace inefficient processes with systems that reduce errors and improve visibility.",
+    },
+       {
+        image: "/servicesolimg/caseStudio.png",
+        title: "Industries We Transform",
+        description: "We’ve built systems for healthcare operations, retail platforms, educational ecosystems, construction workflows, and manufacturing environments helping them replace inefficient processes with systems that reduce errors and improve visibility.",
     }
 ];
 
 export default function CaseStudies() {
     return (
-        <section className="container-fluid p-0 mb-5 pb-5 position-relative" style={{ backgroundColor: '#fff' }}>
+        <section className="container-fluid  position-relative" style={{ backgroundColor: '#fff' }}>
             
             {/* Angled Black Header Background */}
-            <div 
-                className="bg-black text-white position-absolute top-0 w-100" 
-                style={{ 
-                    height: '240px', 
-                    clipPath: 'polygon(0 0, 100% 0, 100% 60%, 45% 60%, 38% 100%, 0 100%)',
-                    zIndex: 0
-                }}
-            >
-                <div className="container h-75 d-flex align-items-center">
-                    <h1 className="fw-bold ps-md-5 mb-5" style={{ fontSize: '2.5rem' }}>Case Studies</h1>
-                </div>
-            </div>
+            
 
-            {/* Content Wrapper */}
-            <div className="container position-relative" style={{ paddingTop: '120px', zIndex: 1 }}>
+             <section className="container-fluid p-0 position-relative">
+        {/* Header Banner */}
+        <div className="banners-containers banner-container">
+          <div className="content-wrapper">
+            <h2 className="pt-3">Case Studies</h2>
+          </div>
+        </div>
+       
+
+      
+            <div className="position-relative">
                 <div className="row justify-content-center align-items-center position-relative">
                     
                     {/* Custom Navigation Buttons */}
@@ -115,6 +113,7 @@ export default function CaseStudies() {
                     </div>
                 </div>
             </div>
+              </section>
 
             <style jsx global>{`
                 .custom-pagination .swiper-pagination-bullet {
@@ -135,5 +134,7 @@ export default function CaseStudies() {
                 }
             `}</style>
         </section>
+
+          
     );
 }

@@ -17,7 +17,7 @@ export default function SectorsSupport() {
             </h3>
 
             {/* Sectors Grid */}
-            <div className="container" style={{ maxWidth: '900px' }}>
+            <div className="container-div" style={{ maxWidth: '900px' }}>
                 <div className="row g-4 justify-content-center">
                     
                     {[
@@ -41,7 +41,7 @@ export default function SectorsSupport() {
                                     alt={sector.title} 
                                     style={{ width: '100px', height: 'auto' }}
                                 />
-                                <h1 className="fw-semibold m-0" style={{ fontSize: '14px' }}>
+                                <h1 className="fw-semibold m-0" style={{ fontSize: '18px' }}>
                                     {sector.title}
                                 </h1>
                             </div>
