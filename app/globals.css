@@ -230,6 +230,7 @@ body {
   min-height: 450px;
   background: url('/images/banner.webp') no-repeat center center;
   background-size: cover;
+      position: relative;
 }
 
 .hero-box {
