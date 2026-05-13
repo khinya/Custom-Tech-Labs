@@ -47,7 +47,8 @@ Authority and Drive Action.
         </div>
 
       </div>
-
+   {/* Rectangle 178 - Yellow Accent Bar */}
+      <div className="hero-accent-bar"></div>
     </section>
 
     
