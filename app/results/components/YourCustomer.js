@@ -7,9 +7,9 @@ import { IoMdStopwatch } from "react-icons/io";
 
 export default function YourCustomer() {
     return (
-        <section className="container-fluid p-0 mb-5 pb-5">
+        <section className="container-fluid p-0">
             {/* Header Banner */}
-            <div className="bg-black py-3 mb-5">
+            <div className="bg-black py-3 ">
                 <h1 className="text-white fw-bold text-center m-0" style={{ fontSize: '1.875rem' }}>
                     For Your Customers
                 </h1>

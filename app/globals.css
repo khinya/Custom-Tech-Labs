@@ -23,18 +23,9 @@ body {
 }
 
 .hero-accent-bar {
-  /* Positioning based on Rectangle 178 specs */
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  
-  /* Dimensions & Color */
-  width: 100%; /* Changed from 1280px to 100% for responsiveness */
-  height: 22px;
-  background: #EEF430;
-  
-  /* Optional: if you want to cap the width at the design spec */
-  /* max-width: 1280px; */
+  width: 100%;
+  border-top: 22px solid #eef430;
+  border-bottom: 22px solid #000;
 }
 
 .our-philosophy-heading {
@@ -46,6 +37,11 @@ body {
   font-weight: 700;
 }
 
+@media (max-width: 768px) {
+  .our-philosophy-heading {
+    width: 100%;
+  }
+}
 
 .what-we-do-new {
   width: 800px;
@@ -60,6 +56,14 @@ body {
   text-align: center;
   font-size: 2rem;
   font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .what-we-do-new {
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+  }
 }
 
 .philosophy-content h3 {
@@ -93,7 +97,17 @@ body {
   max-width: 220px;
 }
 
+/* Mobile */
+@media (max-width: 768px) {
+  .philosophy-content h2 {
+    font-size: 34px;
+  }
 
+  .philosophy-content p {
+    max-width: 100%;
+    line-height: 1.4;
+  }
+}
 
 
 .sets-apart h4 {
@@ -142,11 +156,36 @@ body {
   font-size: 2rem;
 }
 
+@media (max-width: 768px) {
+  .what-we-do-heading {
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+  }
+}
 
 
 .bg-custome {
   background-color: #F5F5F5;
 }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .banner-container {
+    padding: 50px 25px;
+  }
+
+  .content-wrapper h2 {
+    font-size: 34px;
+  }
+
+  .yellow-border {
+    width: 140px;
+    height: 6px;
+  }
+}
+
+
 
 
 
@@ -230,7 +269,6 @@ body {
   min-height: 450px;
   background: url('/images/banner.webp') no-repeat center center;
   background-size: cover;
-      position: relative;
 }
 
 .hero-box {
@@ -817,6 +855,16 @@ body {
 }
 
 
+
+
+
+
+
+
+
+
+
+
 .impact-section {
   background: #f3f3f3;
   position: relative;
@@ -1144,6 +1192,7 @@ body {
 
   .hero {
     text-align: center;
+    position: relative;
   }
 }
 
@@ -1178,47 +1227,9 @@ body {
    4. LARGE DESKTOP (1200px+)
    ========================================================================== */
 
-
-@media (max-width: 768px) {
-  .our-philosophy-heading {
-    width: 100%;
-  }
-   .what-we-do-new {
-    width: 100%;
-    font-size: 1.5rem;
-    padding: 10px 20px;
-  }
-  .philosophy-content h2 {
-    font-size: 34px;
-  }
-  .philosophy-content p {
-    max-width: 100%;
-    line-height: 1.4;
-  }
-  .what-we-do-heading {
-    width: 100%;
-    font-size: 1.5rem;
-    padding: 10px 20px;
-  }
-    .banner-container {
-    padding: 50px 25px;
-  }
-
-  .content-wrapper h2 {
-    font-size: 34px;
-  }
-
-  .yellow-border {
-    width: 140px;
-    height: 6px;
-  }
-}
-
 @media (min-width: 1200px) {
 
   .nav-custom {
     max-width: 1200px;
   }
 }
-
-

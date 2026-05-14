@@ -3,7 +3,9 @@ import { BiError } from "react-icons/bi";
 
 export default function BetterBuying() {
     return (
-        <section className="container-fluid py-4 d-flex flex-column align-items-center gap-5">
+        <>
+        <div className="hero-accent-bar"></div>
+        <section className="container-fluid py-1 d-flex flex-column align-items-center gap-5">
             
             {/* Dark Header Card */}
             <div 
@@ -59,5 +61,7 @@ export default function BetterBuying() {
             </div>
 
         </section>
+
+        </>
     );
 }

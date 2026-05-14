@@ -6,7 +6,7 @@ import { FaCheck } from "react-icons/fa6";
 
 export default function BusinessRuns() {
     return (
-        <section className="container py-5">
+        <section className="container">
             {/* Main Heading */}
             <div className="row mb-4">
                 <div className="col-12">

@@ -1,5 +1,6 @@
 export default function Hero() {
   return (
+    <>
     <section
       className="hero"
       /* Ensure the parent section is relative so the bar attaches to the bottom */
@@ -29,7 +30,8 @@ export default function Hero() {
       </div>
 
       {/* Rectangle 178 - Yellow Accent Bar */}
-      <div className="hero-accent-bar"></div>
     </section>
+      {/* <div className="hero-accent-bar"></div> */}
+    </>
   );
 }
