@@ -37,11 +37,6 @@ body {
   font-weight: 700;
 }
 
-@media (max-width: 768px) {
-  .our-philosophy-heading {
-    width: 100%;
-  }
-}
 
 .what-we-do-new {
   width: 800px;
@@ -58,13 +53,6 @@ body {
   font-weight: 700;
 }
 
-@media (max-width: 768px) {
-  .what-we-do-new {
-    width: 100%;
-    font-size: 1.5rem;
-    padding: 10px 20px;
-  }
-}
 
 .philosophy-content h3 {
   font-family: 'Albert Sans', sans-serif;
@@ -97,17 +85,6 @@ body {
   max-width: 220px;
 }
 
-/* Mobile */
-@media (max-width: 768px) {
-  .philosophy-content h2 {
-    font-size: 34px;
-  }
-
-  .philosophy-content p {
-    max-width: 100%;
-    line-height: 1.4;
-  }
-}
 
 
 .sets-apart h4 {
@@ -156,34 +133,13 @@ body {
   font-size: 2rem;
 }
 
-@media (max-width: 768px) {
-  .what-we-do-heading {
-    width: 100%;
-    font-size: 1.5rem;
-    padding: 10px 20px;
-  }
-}
+
 
 
 .bg-custome {
   background-color: #F5F5F5;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .banner-container {
-    padding: 50px 25px;
-  }
-
-  .content-wrapper h2 {
-    font-size: 34px;
-  }
-
-  .yellow-border {
-    width: 140px;
-    height: 6px;
-  }
-}
 
 
 
@@ -856,15 +812,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
 .impact-section {
   background: #f3f3f3;
   position: relative;
@@ -1227,9 +1174,52 @@ body {
    4. LARGE DESKTOP (1200px+)
    ========================================================================== */
 
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .what-we-do-heading {
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+  }
+  
+  .banner-container {
+    padding: 50px 25px;
+  }
+
+  .content-wrapper h2 {
+    font-size: 34px;
+  }
+
+  .yellow-border {
+    width: 140px;
+    height: 6px;
+  }
+  
+  .philosophy-content h2 {
+    font-size: 34px;
+  }
+
+  .philosophy-content p {
+    max-width: 100%;
+    line-height: 1.4;
+  }
+   .what-we-do-new {
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+  }
+  .our-philosophy-heading {
+    width: 100%;
+  }
+}
+
+
 @media (min-width: 1200px) {
 
   .nav-custom {
     max-width: 1200px;
   }
 }
+
