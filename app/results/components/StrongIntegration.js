@@ -12,10 +12,10 @@ const integrationData = [
 export default function StrongIntegration() {
     return (
         <section className="container-fluid py-5" style={{ backgroundColor: '#f3f3f3' }}>
-            
+
             {/* Inner Gray Wrapper */}
             <div className="container p-4 p-md-5 position-relative" style={{ backgroundColor: '#e9e9e9' }}>
-                
+
                 {/* Heading */}
                 <h1 className="display-6 fw-bold text-black mb-5" style={{ fontSize: 'calc(1.5rem + 1.2vw)' }}>
                     What Strong Integrations Deliver
@@ -23,16 +23,17 @@ export default function StrongIntegration() {
 
                 {/* Main Content Row */}
                 <div className="row align-items-center position-relative z-1">
-                    
+
                     {/* Floating Black Background Element */}
-                    <div className="position-absolute start-50 translate-middle-x w-100 d-none d-lg-block" 
-                         style={{ bottom: '15%', height: '180px', zIndex: -1 }}>
-                        <Image 
-                            className="w-100 h-100 object-cover" 
-                            src='/system/black.png' 
-                            alt="Background Accent" 
-                            width={1480} 
-                            height={180} 
+                    <div className="position-absolute start-50 translate-middle-x w-100 d-none d-lg-block black-img"
+                        style={{ bottom: '0px', height: '180px', zIndex: -1, position: 'absolute' }}>
+                        <Image
+                            className="w-100 h-100 object-cover"
+                            src='/system/black.png'
+                            alt="Background Accent"
+                            width={1480}
+                            height={180}
+                            style={{ height: '180px' }}
                         />
                     </div>
 
@@ -40,11 +41,11 @@ export default function StrongIntegration() {
                     <div className="col-12 col-lg-5 mb-4 mb-lg-0 text-center">
                         <Image
                             src="/system/strong.png"
-                            width={500}
-                            height={420}
+                            width={432}
+                            height={371}
                             alt="Strong Integration"
                             className="img-fluid shadow-sm"
-                            style={{ maxWidth: '100%', height: 'auto' }}
+                            style={{ maxWidth: '100%', height: '371px' }}
                         />
                     </div>
 
@@ -75,15 +76,15 @@ export default function StrongIntegration() {
 
                     {/* Buttons */}
                     <div className="d-flex flex-column flex-sm-row gap-3">
-                        <Link 
-                            href="/" 
+                        <Link
+                            href="/"
                             className="btn fw-bold px-4 py-2 d-flex align-items-center justify-content-center transition-scale"
                             style={{ backgroundColor: '#EEF430', minWidth: '180px', height: '48px', borderRadius: '0' }}
                         >
                             View our Portfolio →
                         </Link>
-                        <Link 
-                            href="/solutionservice" 
+                        <Link
+                            href="/solutionservice"
                             className="btn fw-bold px-4 py-2 d-flex align-items-center justify-content-center transition-scale"
                             style={{ backgroundColor: '#EEF430', minWidth: '180px', height: '48px', borderRadius: '0' }}
                         >

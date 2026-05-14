@@ -1,53 +1,86 @@
-export default function Hero() {
-  return (
-<section
-  className="hero"
-  style={{ backgroundImage: "url('/images/banner12.webp')" }}
->
+'use client';
+import Image from "next/image";
+import Link from "next/link";
 
-      <div className="container px-5 py-5">
-
-        <div className="hero-box">
-
-          <div className="row align-items-center">
-
-            <div className="col-lg-6">
-
-              <h1>
-               
-              Systems That Work Together-So Your Business Can Move Faster
-               
-              </h1> 
-
-              <p>
-              <b> At Custom Labs, we provide system integration services that connect your tools, remove manual work, and create a single system your team can rely on.
-                </b>
-              </p>
-
-              <p>  Because disconnected systems don’t just slow you down, they create problems you shouldn’t have to manage.</p>
-<div className="d-flex gap-3">
-  <button className="btn-warning-custom">
-    View Our Portfolio
-  </button>
-
-  <button className="btn-warning-custom">
-    Work With Us
-  </button>
-</div>
-
+export default function BannerPage() {
+    return (
+        <>
+        <section 
+            className="container-fluid pb-3 p-0 d-flex flex-column justify-content-center position-relative overflow-hidden"
+            style={{ 
+                margin:'0 auto'
+            }}
             
+        >
+            <Image src="/system/hero.png" alt="" width={1200} height={600} className="banner-image"/>
 
+            {/* Mobile Image - Visible only on xs/sm */}
+            <div className="d-md-none w-100 mb-4" style={{  position: 'relative' }}>
+                <Image
+                    src="/system/hero1.png"
+                    fill
+                    priority
+                    alt="hero Banner"
+                    className="object-contain"
+                />
             </div>
 
-          </div>
-
-        </div>
-
-      </div>
-   {/* Rectangle 178 - Yellow Accent Bar */}
-      <div className="hero-accent-bar"></div>
-    </section>
-
+            <div className="container px-md-5 banner-caption">
+                <div className="row">
+                    <div className="col-12 col-md-7 col-lg-6 text-center text-md-start">
+                        
+                        {/* Heading */}
+                        <h1 className="display-5 fw-extrabold mb-4 lh-tight main-heading">
+                            Systems That Work Together — So Your <br className="d-none d-md-block" />
+                            Business Can Move Faster
+                        </h1>
     
-  );
+                        {/* Paragraphs */}
+                        <p className="fs-5 fw-semibold mb-3 lh-base">
+                            At Custom Labs, we provide system integration services that connect 
+                            your tools, remove manual work, and create a single system your 
+                            team can rely on.
+                        </p>
+                        
+                        <p className="fs-6 fw-normal mb-5 opacity-75">
+                            Because disconnected systems don’t just slow you down, they create 
+                            problems you shouldn’t have to manage.
+                        </p>
+
+                        {/* Buttons */}
+                        <div className="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-md-start">
+                            <Link 
+                                href="/" 
+                                className="btn fw-bold px-4 py-2 text-black transition-transform hover-scale" 
+                                style={{ backgroundColor: '#EEF430', fontSize: '15px', borderRadius: '6px', minWidth: '160px' }}
+                            >
+                                View our Portfolio
+                            </Link>
+                            <Link 
+                                href="/solutionservice" 
+                                className="btn fw-bold px-4 py-2 text-black transition-transform hover-scale" 
+                                style={{ backgroundColor: '#EEF430', fontSize: '15px', borderRadius: '6px', minWidth: '160px' }}
+                            >
+                                Work With Us
+                            </Link>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <style jsx>{`
+                .hover-scale:hover {
+                    transform: scale(1.05);
+                }
+                @media (max-width: 767px) {
+                    section {
+                        background-image: none !important;
+                    }
+                }
+            `}</style>
+        </section>
+            <div className="yellow"></div>
+            <div className="black"></div>
+    </>);
 }
