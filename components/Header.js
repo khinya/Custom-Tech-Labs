@@ -31,39 +31,91 @@ export default function Header() {
         </button>
 
         <div className={`collapse navbar-collapse ${open ? "show" : ""}`}>
-          <ul className="navbar-nav ms-auto">
+       <ul className="navbar-nav ms-auto">
 
-            <li className="nav-item mx-3">
-              <Link href="/about" className="nav-link" onClick={handleClose}>
-                About Us
-              </Link>
-            </li>
+  <li className="nav-item mx-3">
+    <Link href="/about" className="nav-link" onClick={handleClose}>
+      About Us
+    </Link>
+  </li>
 
-            <li className="nav-item mx-3">
-              <Link href="#" className="nav-link" onClick={handleClose}>
-                What we do
-              </Link>
-            </li>
+  {/* What We Do Dropdown */}
+  <li className="nav-item dropdown mx-3">
+    <Link
+      href="#"
+      className="nav-link dropdown-toggle"
+      role="button"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+    >
+      What we do
+    </Link>
 
-            <li className="nav-item mx-3">
-              <Link href="#" className="nav-link" onClick={handleClose}>
-                Our Results
-              </Link>
-            </li>
+    <ul className="dropdown-menu">
 
-            <li className="nav-item mx-3">
-              <Link href="#" className="nav-link" onClick={handleClose}>
-                Insight
-              </Link>
-            </li>
+      <li>
+        <Link
+          href="https://custom-tech-labs-eta.vercel.app/custom-website-development-service"
+          className="dropdown-item"
+          onClick={handleClose}
+        >
+          Custom Websites
+        </Link>
+      </li>
 
-            <li className="ms-lg-3 mt-3 mt-lg-0">
-              <Link href="#" className="btn btn-warning-custom">
-                Contact Us
-              </Link>
-            </li>
+      <li>
+        <Link
+          href="https://custom-tech-labs-eta.vercel.app/custom-app-development-service"
+          className="dropdown-item"
+          onClick={handleClose}
+        >
+          Custom Applications
+        </Link>
+      </li>
 
-          </ul>
+      <li>
+        <Link
+          href="https://custom-tech-labs-eta.vercel.app/system-integration-service"
+          className="dropdown-item"
+          onClick={handleClose}
+        >
+          System Integrations
+        </Link>
+      </li>
+
+      <li>
+        <Link
+          href="https://custom-tech-labs-eta.vercel.app/ecommerce-solution-service"
+          className="dropdown-item"
+          onClick={handleClose}
+        >
+          eCommerce Solutions
+        </Link>
+      </li>
+
+    </ul>
+  </li>
+
+  <li className="nav-item mx-3">
+    <Link href="#" className="nav-link" onClick={handleClose}>
+      Our Results
+    </Link>
+  </li>
+
+  <li className="nav-item mx-3">
+    <Link href="#" className="nav-link" onClick={handleClose}>
+      Insight
+    </Link>
+  </li>
+
+  <li className="ms-lg-3 mt-3 mt-lg-0">
+    <Link href="#" className="btn btn-warning-custom">
+      Contact Us
+    </Link>
+  </li>
+
+</ul>
+
         </div>
 
       </nav>

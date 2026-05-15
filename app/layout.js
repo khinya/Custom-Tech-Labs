@@ -24,11 +24,12 @@ const abeezee = ABeeZee({
 
 import "./globals.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import BootstrapClient from "./BootstrapClient";
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en"  className={`${inter.variable} ${albert.variable} ${abeezee.variable} h-full antialiased`}>
-      <body>{children}</body>
+      <body><BootstrapClient /> {children}</body>
     </html>
   );
 }

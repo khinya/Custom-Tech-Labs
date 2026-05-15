@@ -4,7 +4,7 @@ export default function ImpactSection() {
       
       {/* Top Strips */}
       <div className="strip yellow-strip" />
-      <div className="strip black-strip" />
+      <div className="strip  black-strip" />
 
    
     </section>

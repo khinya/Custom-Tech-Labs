@@ -4,7 +4,7 @@ export default function Hero() {
       <div className="container px-5 py-5">
         <div className="hero-box">
           <div className="row align-items-center">
-            <div className="col-lg-5">
+            <div className="col-lg-6">
               <h1>
                 Technology Built for the <br />
                 Way People Actually Work
@@ -15,29 +15,13 @@ export default function Hero() {
                 intuition to build tech that users actually enjoy using.
               </p>
 
-              <button
-                className="btn btn-warning btn-sm me-2"
-                style={{
-                  backgroundColor: "#eef430",
-                  fontWeight: "500",
-                  border: "none",
-                  padding: "8px 15px",
-                }}
-              >
-                View Our Portfolio
-              </button>
+            <button className="custom-btn me-2">
+  View Our Portfolio
+</button>
 
-              <button
-                className="btn btn-warning btn-sm"
-                style={{
-                  backgroundColor: "#eef430",
-                  fontWeight: "500",
-                  border: "none",
-                  padding: "8px 15px",
-                }}
-              >
-                Work With Us
-              </button>
+<button className="custom-btn">
+  Work With Us
+</button>
             </div>
           </div>
         </div>

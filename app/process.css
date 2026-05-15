@@ -8,10 +8,6 @@
 }
 
 /* =========================
-   BODY (optional)
-========================= */
-
-/* =========================
    MAIN CONTAINER
 ========================= */
 .process-container {
@@ -79,11 +75,16 @@
 
 /* Step label */
 .step-label {
-  font-size: 11px;
-  font-weight: bold;
-  color: #555;
   display: block;
   margin-bottom: 8px;
+  font-family: 'ABeeZee', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0;
+
+  color: #000000;
 }
 
 /* Title */
@@ -116,18 +117,18 @@
 
 /* Step 1 → 2 */
 .line-1-2 {
-  top: -65px;
-  left: 25%;
+  top: -140px;
+  left: 29%;
   width: 30%;
-  height: 110px;
+  height: 140px;
   border-bottom: none;
   border-right: none;
 }
 
 /* Step 2 → 3 */
 .line-2-3 {
-  top: -65px;
-  right: 25%;
+  top: -130px;
+  right: 27%;
   width: 30%;
   height: 110px;
   border-bottom: none;
@@ -136,22 +137,22 @@
 
 /* Step 3 → 4 */
 .line-3-4 {
-  top: -65px;
-  left: 25%;
-  width: 30%;
-  height: 110px;
-  border-bottom: none;
-  border-right: none;
+    top: -102px;
+    left: 26%;
+    width: 30%;
+    height: 108px;
+    border-bottom: none;
+    border-right: none;
 }
 
 /* Step 4 → 5 */
 .line-4-5 {
-  top: -65px;
-  right: 25%;
-  width: 30%;
-  height: 110px;
-  border-bottom: none;
-  border-left: none;
+    top: -114px;
+    right: 25%;
+    width: 30%;
+    height: 115px;
+    border-bottom: none;
+    border-left: none;
 }
 
 /* =========================
