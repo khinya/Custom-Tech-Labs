@@ -635,8 +635,11 @@ span {
 
 /* Heading inside banner */
 .banner-container h2 {
+ font-family: 'Albert Sans', sans-serif;
+  font-weight: 600;
   font-size: 32px;
-
+  line-height: 100%;
+  letter-spacing: 0%;
   color: #fff;
 
 }
@@ -678,7 +681,13 @@ span {
   left: 564px;
   transform: rotate(133deg);
 }
-
+.yellow-border:before {
+    width: 142px;
+    height: 16px;
+    top: -47px;
+    left: 569px;
+    transform: rotate(133deg);
+}
 /* Top Right Yellow Border */
 .yellow-border::after {
   content: "";
@@ -796,6 +805,12 @@ span {
   position: relative;
   overflow: hidden;
   text-decoration: none;
+  font-family: 'Albert Sans', sans-serif;
+font-weight: 500;
+font-size: 14px;
+line-height: 100%;
+letter-spacing: 0%;
+border-radius: 4px;
 }
 
 /* BUTTON HOVER ANIMATION */
@@ -835,7 +850,7 @@ span {
   /* Maintains aspect ratio (no stretching) */
   display: block;
   /* Removes bottom whitespace gap */
-  border-radius: 8px;
+ 
   /* Matches your professional UI style */
   object-fit: cover;
   /* Ensures image fills space cleanly */
@@ -854,8 +869,12 @@ span {
 }
 
 .cta-subtext {
-  font-size: 33px;
-  color: #000;
+ font-family: 'ABeeZee', sans-serif;
+font-weight: 400;
+font-size: 24px;
+letter-spacing: 0%;
+color: #000;
+max-width: 490px;
 }
 
 .btn-black {
@@ -868,6 +887,7 @@ span {
   align-items: center;
   text-decoration: none;
   max-width: 300px;
+  font-family: 'Albert Sans', sans-serif;
 }
 
 
@@ -1336,6 +1356,7 @@ span {
 
 .nav-item.dropdown {
   position: relative;
+  
 }
 
 /* Hide by default */
@@ -1344,23 +1365,15 @@ span {
   visibility: hidden;
   transform: translateY(12px);
   transition: all 0.3s ease;
-
   display: block !important;
-
   position: absolute;
   top: 100%;
   left: 50%;
   transform: translateX(-50%) translateY(12px);
-
   min-width: 280px;
   padding: 14px;
-
   background: #ffffff;
   border: none;
-  border-radius: 18px;
-
-  box-shadow: 0 15px 40px rgba(0,0,0,0.18);
-
   z-index: 9999;
 }
 
@@ -1387,20 +1400,13 @@ span {
   display: flex;
   align-items: center;
   gap: 14px;
-
   padding: 14px 18px;
   margin-bottom: 10px;
-
-  border-radius: 14px;
-
   font-family: 'Albert Sans', sans-serif;
   font-size: 17px;
   font-weight: 600;
-
   color: #000 !important;
   background: transparent;
-
-  transition: all 0.25s ease;
 }
 
 /* Remove last margin */
@@ -1415,26 +1421,6 @@ span {
 .dropdown-item:hover {
   background: #f5f5f5;
   color: #000 !important;
-
-
-}
-
-
-
-/* Arrow top */
-.dropdown-menu::before {
-  content: "";
-
-  position: absolute;
-  top: -10px;
-  left: 50%;
-
-  transform: translateX(-50%) rotate(45deg);
-
-  width: 20px;
-  height: 20px;
-
-  background: #fff;
 }
 
 /* Mobile */

@@ -224,28 +224,37 @@ function CardContent({ item }) {
         }
 
         h3 {
-          font-size: 22px;
+          font-family: 'Albert Sans', sans-serif;
           font-weight: 700;
+          font-size: 24px;
+          line-height: 100%;
+          letter-spacing: 0%;
+         
         }
 
         .role {
-          font-size: 16px;
+          font-size: 24px;
           font-style: italic;
         }
 
         .stars {
           color: #ffb400;
-          margin-bottom: 10px;
+          margin-bottom: 10px;     
+          font-size: 33px;
         }
 
         .testimonial-text {
-          font-size: 16px;
+          font-family: 'Albert Sans', sans-serif;
+          font-weight: 400;
           font-style: italic;
-          line-height: 1.5;
+          font-size: 16px;
+     
         }
 
         .testimonial-text span {
           font-weight: 700;
+            font-family: 'Albert Sans', sans-serif;
+           font-size: 16px;
         }
 
       `}</style>

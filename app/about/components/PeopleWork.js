@@ -15,7 +15,7 @@ export default function PeopleWork() {
             {/* Person 1 - Left Image */}
             <div className="row align-items-center g-4">
               <div className="col-12 col-md-5">
-                <div className="position-relative" style={{ height: "300px" }}>
+                <div className="position-relative" style={{ height: "400px" }}>
                   <Image
                     className="object-fit-cover"
                     src={"/images/divakar-saini.webp"}
@@ -51,7 +51,7 @@ export default function PeopleWork() {
             {/* Person 2 - Right Image (Reverse on Desktop) */}
             <div className="row align-items-center g-4 flex-md-row-reverse">
               <div className="col-12 col-md-5">
-                <div className="position-relative" style={{ height: "300px" }}>
+                <div className="position-relative" style={{ height: "400px" }}>
                   <Image
                     className="object-fit-cover"
                     src={"/images/harvindra-singh.webp"}
@@ -85,7 +85,7 @@ export default function PeopleWork() {
             {/* Person 3 - Left Image */}
             <div className="row align-items-center g-4">
               <div className="col-12 col-md-5">
-                <div className="position-relative" style={{ height: "300px" }}>
+                <div className="position-relative" style={{ height: "400px" }}>
                   <Image
                     className="object-fit-cover "
                     src={"/images/prati-kaufman.webp"}
