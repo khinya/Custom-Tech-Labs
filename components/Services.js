@@ -10,7 +10,7 @@ export default function Services() {
         "Move beyond digital brochures. We build high-converting engines that establish authority and turn visitors into long-term partners.",
       img: "/images/img1.webp",
       btnText: "VIEW WEBSITE SOLUTIONS",
-      link: "/websites",
+      link: "/custom-website-development-service",
     },
     {
       title: "Custom Applications",
@@ -19,7 +19,7 @@ export default function Services() {
         "Software should adapt to you, not the other way around. We build tools designed around how your team and customers actually move.",
       img: "/images/img2.webp",
       btnText: "EXPLORE CUSTOM APPS",
-      link: "/applications",
+      link: "/custom-app-development-service",
     },
     {
       title: "System Integrations",
@@ -28,7 +28,7 @@ export default function Services() {
         "Stop the manual data entry. We make your disparate tools talk to each other so your business can run on autopilot.",
       img: "/images/img3.webp",
       btnText: "LEARN ABOUT INTEGRATIONS",
-      link: "/integrations",
+      link: "/system-integration-service",
     },
     {
       title: "eCommerce Solutions",
@@ -37,7 +37,7 @@ export default function Services() {
         "Remove the hurdles between your product and your customer. We design buying experiences that simplify the path to purchase.",
       img: "/images/img4.webp",
       btnText: "SEE E-COMMERCE SUCCESS",
-      link: "/ecommerce",
+      link: "/ecommerce-solution-service",
     },
   ];
 

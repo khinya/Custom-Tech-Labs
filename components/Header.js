@@ -40,25 +40,25 @@ export default function Header() {
             </li>
 
             <li className="nav-item mx-3">
-              <Link href="/services" className="nav-link" onClick={handleClose}>
+              <Link href="#" className="nav-link" onClick={handleClose}>
                 What we do
               </Link>
             </li>
 
             <li className="nav-item mx-3">
-              <Link href="/results" className="nav-link" onClick={handleClose}>
+              <Link href="#" className="nav-link" onClick={handleClose}>
                 Our Results
               </Link>
             </li>
 
             <li className="nav-item mx-3">
-              <Link href="/insights" className="nav-link" onClick={handleClose}>
+              <Link href="#" className="nav-link" onClick={handleClose}>
                 Insight
               </Link>
             </li>
 
             <li className="ms-lg-3 mt-3 mt-lg-0">
-              <Link href="/contact" className="btn btn-warning-custom">
+              <Link href="#" className="btn btn-warning-custom">
                 Contact Us
               </Link>
             </li>

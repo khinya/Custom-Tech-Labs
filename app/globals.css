@@ -9,10 +9,39 @@
 
 body {
   background: #d9d9d9;
-  font-family: 'Albert Sans', sans-serif;
+  font-family: var(--font-heading);
   color: #333;
 
 }
+
+:root {
+
+
+  /* ✅ font variables */
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-albert);
+  --font-special: var(--font-abeezee);
+}
+
+
+li {
+  font-family: var(--font-sans);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+}
+
+p,
+span {
+  font-family: var(--font-special);
+}
+
 
 /* ==========================================================================
    2. LAYOUT CONTAINERS
