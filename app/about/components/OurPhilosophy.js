@@ -51,7 +51,7 @@ export default function OurPhilosophy() {
             >
               <Image
                 className="img-fluid shadow-sm"
-                src="/images/philosophy.webp "
+                src="/images/philosophy1.webp "
                 width={409}
                 height={307}
                 alt="Our Philosophy"
