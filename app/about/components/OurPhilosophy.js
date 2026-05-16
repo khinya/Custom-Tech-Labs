@@ -12,13 +12,13 @@ export default function OurPhilosophy() {
         </div>
 
         {/* Content Row */}
-        <div className="row align-items-center g-5">
+        <div className="row align-items-center g-5" style={{ marginTop: '40px' }}>
           {/* Left Text */}
           <div className="col-12 col-lg-7">
             <div className="pe-lg-4">
               <h2
-                className="display-6 fw-bold lh-base mb-0"
-                style={{ marginTop: "20px" }}
+                className="display-6 fw-bold lh-base mb-0 OurFontSize"
+                style={{ marginTop: "0px" }}
               >
                 Technology should never feel like a burden. It should{" "}
                 <span
@@ -31,14 +31,14 @@ export default function OurPhilosophy() {
               </h2>
 
               <div className="fs-5 lh-lg">
-                <p className="mb-0">That’s what we build at CustomTech Labs:</p>
-                <p className="fw-bold mb-0 mt-0">Technology with purpose.</p>
-                <p className="mb-0" style={{ color: "#a6a6a6" }}>
+                <h6 className="mb-0 ourFont16">That’s what we build at CustomTech Labs:</h6>
+                <h6 className="fw-bold mb-0 mt-0 ourFont16">Technology with purpose.</h6>
+                <h6 className="mb-0 ourFont16" style={{ color: "#a6a6a6" }}>
                   Powered by strategy.
-                </p>
-                <p className="mb-0" style={{ color: "#a6a6a6" }}>
+                </h6>
+                <h6 className="mb-0 ourFont16" style={{ color: "#a6a6a6" }}>
                   Designed for people.
-                </p>
+                </h6>
               </div>
             </div>
           </div>

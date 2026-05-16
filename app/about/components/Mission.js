@@ -18,10 +18,10 @@ export default function Mission() {
         </div>
 
         {/* Text Area */}
-        <p className={styles.missionDescription}>
+        <h6 className={styles.missionDescription} style={{ fontSize: '24px' }}>
           To make technology human, simple, and smart—for both businesses and
           the people they serve.
-        </p>
+        </h6>
 
         {/* Image Container */}
         <div className={styles.imageWrapper}>

@@ -1,9 +1,9 @@
 export default function Hero() {
   return (
-<section
-  className="hero"
-  style={{ backgroundImage: "url('/images/about-banner.webp')" }}
->
+    <section
+      className="hero"
+      style={{ backgroundImage: "url('/images/about-banner.webp')" }}
+    >
 
       <div className="container px-5 py-5">
 
@@ -11,26 +11,26 @@ export default function Hero() {
 
           <div className="row align-items-center">
 
-            <div className="col-lg-6">
+            <div className="col-lg-7">
 
               <h1>
-               
-                Strategic. Human-Centered. Tech That Works for People.
-               
-              </h1> 
 
-              <p>
-              <b> CustomTech Labs is a joint venture between Laxmaya Technologies, a global technology and enterprise engineering company, and Small Biz Marketing (SBM), a U.S.-based strategy and growth marketing agency.
-                </b>
+                Strategic. Human-Centered. Tech That Works for People.
+
+              </h1>
+
+              <p className="fontmainText fw-bold">
+                CustomTech Labs is a joint venture between Laxmaya Technologies, a global technology and enterprise engineering company, and Small Biz Marketing (SBM), a U.S.-based strategy and growth marketing agency.
+
               </p>
 
-              <p>Together, we combine deep technical expertise with strategic business intelligence to create technology that doesn’t just function—it feels intuitive, efficient, and natural to the people who use it.</p>
+              <p className="fontmainText">Together, we combine deep technical expertise with strategic business intelligence to create technology that doesn’t just function—it feels intuitive, efficient, and natural to the people who use it.</p>
 
               <button className="btn-warning-custom">
-              Download Portfolio
+                Download Portfolio
               </button>
 
-            
+
 
             </div>
 
@@ -42,6 +42,6 @@ export default function Hero() {
 
     </section>
 
-    
+
   );
 }

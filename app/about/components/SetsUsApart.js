@@ -15,7 +15,7 @@ export default function SetsUsApart() {
           </h1>
 
           {/* Main Slogan */}
-          <h3 className="fs-5 fw-semibold">
+          <h3 className="fs-5 fw-semibold WhatFontSize">
             Most tech companies build what is{" "}
             <span style={{ color: "#d9d9d9" }}>asked.</span> <br />
             We build what is{" "}
@@ -45,27 +45,27 @@ export default function SetsUsApart() {
             style={{ backgroundColor: "#979797", borderRadius: "1rem" }}
           >
             <div className="col-4 border-end border-white">
-              <h6 style={{ color: "#eff430" }} className="mb-1">
+              <h6 style={{ color: "#eff430" }} className="mb-1 boxFont">
                 EMPATHY
               </h6>
-              <p className="mb-0 small fw-bold ">User</p>
-              <p className="mb-0 small fw-bold ">Behavior First</p>
+              <p className="mb-0 small fw-bold  boxFont">User</p>
+              <p className="mb-0 small fw-bold boxFont">Behavior First</p>
             </div>
 
             <div className="col-4">
-              <h6 style={{ color: "#eff430" }} className=" mb-1">
+              <h6 style={{ color: "#eff430" }} className=" mb-1 boxFont">
                 ENGINEERING
               </h6>
-              <p className="mb-0 small fw-bold">Enterprise-Grade</p>
-              <p className="mb-0 small fw-bold">System</p>
+              <p className="mb-0 small fw-bold boxFont">Enterprise-Grade</p>
+              <p className="mb-0 small fw-bold boxFont">System</p>
             </div>
 
-            <div className="col-4 border-start border-white">
-              <h6 style={{ color: "#eff430" }} className=" mb-1">
+            <div className="col-4 border-start border-white ">
+              <h6 style={{ color: "#eff430" }} className=" mb-1 boxFont">
                 OUTCOMES
               </h6>
-              <p className="mb-0 small fw-bold">Real Business</p>
-              <p className="mb-0 small fw-bold">Impact</p>
+              <p className="mb-0 small fw-bold boxFont">Real Business</p>
+              <p className="mb-0 small fw-bold boxFont">Impact</p>
             </div>
           </div>
         </div>

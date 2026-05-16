@@ -1,3 +1,5 @@
+"use client"
+
 import Header from "../../components/Header";
 import BannerPage from "./components/BannerPage";
 import SameSystem from "./components/SameSystem";
