@@ -13,19 +13,19 @@ import "swiper/css/pagination";
 
 const slides = [
   {
-    image: "/system/case.png",
+    image: "/appsimg/case.jpg",
     title: "Industries We Transform",
     description:
       "We’ve built systems for healthcare operations, retail platforms, educational ecosystems, construction workflows, and manufacturing environments helping them replace inefficient processes with systems that reduce errors and improve visibility.",
   },
   {
-    image: "/system/case.png",
+    image: "/appsimg/case.jpg",
     title: "Industries We Transform",
     description:
       "We’ve built systems for healthcare operations, retail platforms, educational ecosystems, construction workflows, and manufacturing environments helping them replace inefficient processes with systems that reduce errors and improve visibility.",
   },
   {
-    image: "/system/case.png",
+    image: "/appsimg/case.jpg",
     title: "Industries We Transform",
     description:
       "We’ve built systems for healthcare operations, retail platforms, educational ecosystems, construction workflows, and manufacturing environments helping them replace inefficient processes with systems that reduce errors and improve visibility.",
@@ -44,7 +44,7 @@ export default function CaseStudies() {
         {/* Header Banner */}
         <div className="banners-containers banner-container">
           <div className="content-wrapper">
-            <h2 className="pt-3  ">Case Studies</h2>
+            <h2 className="pt-3">Case Studies</h2>
           </div>
         </div>
 
@@ -82,8 +82,8 @@ export default function CaseStudies() {
                   el: ".custom-pagination",
                 }}
               >
-                {slides.map((slide) => (
-                  <SwiperSlide key={slide.id}>
+                {slides.map((slide, index) => (
+                  <SwiperSlide key={index}>
                     {/* Featured Image */}
                     <div className="position-relative w-100 shadow-lg">
                       <Image

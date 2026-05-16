@@ -9,20 +9,17 @@
 
 body {
   background: #d9d9d9;
-  font-family: var(--font-heading);
-  color: #333;
 
+  font-family: var(--font-albert), sans-serif;
+  color: #333;
 }
 
 :root {
-
-
   /* ✅ font variables */
   --font-sans: var(--font-inter);
   --font-heading: var(--font-albert);
   --font-special: var(--font-abeezee);
 }
-
 
 li {
   font-family: var(--font-sans);
@@ -41,7 +38,6 @@ p,
 span {
   font-family: var(--font-special);
 }
-
 
 /* ==========================================================================
    2. LAYOUT CONTAINERS
@@ -96,7 +92,7 @@ span {
 }
 
 .philosophy-content h3 {
-  font-family: 'Albert Sans', sans-serif;
+  font-family: "Albert Sans", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 100%;
@@ -106,7 +102,7 @@ span {
 }
 
 .philosophy-content h2 {
-  font-family: 'Albert Sans', sans-serif;
+  font-family: "Albert Sans", sans-serif;
   font-size: 30px;
   font-weight: 400;
   line-height: 110%;
@@ -116,7 +112,7 @@ span {
 }
 
 .philosophy-content p {
-  font-family: 'Albert Sans', sans-serif;
+  font-family: "Albert Sans", sans-serif;
   font-size: 17px;
   font-weight: 400;
   letter-spacing: 0%;
@@ -138,9 +134,8 @@ span {
   }
 }
 
-
 .sets-apart h4 {
-  font-family: 'Albert Sans', sans-serif;
+  font-family: "Albert Sans", sans-serif;
   font-weight: 500 !important;
   font-style: italic !important;
   font-size: 16px !important;
@@ -157,7 +152,6 @@ span {
   background-color: #ffffff;
 }
 
-
 /* app/components/Banner.css */
 
 .banner-container {
@@ -165,6 +159,7 @@ span {
   background: #000;
   padding: 80px 100px;
   overflow: hidden;
+  font-family: "Albert Sans", sans-serif;
 }
 
 .content-wrapper h2 {
@@ -193,9 +188,8 @@ span {
   }
 }
 
-
 .bg-custome {
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
 }
 
 /* Responsive */
@@ -213,10 +207,6 @@ span {
     height: 6px;
   }
 }
-
-
-
-
 
 /* ==========================================================================
    3. HEADER & NAVIGATION
@@ -281,11 +271,6 @@ span {
   border-radius: 6px;
   font-weight: 600;
   transition: all 0.25s ease;
-  font-family: 'Albert Sans', sans-serif;
-  font-weight: 600;
-  font-size: 14px;
-  letter-spacing: 0%;
-  text-align: center;
 }
 
 .btn-warning-custom:hover {
@@ -293,15 +278,13 @@ span {
   box-shadow: 0 6px 15px rgba(238, 244, 48, 0.3);
 }
 
-
-
 /* ==========================================================================
    4. HERO SECTION
    ========================================================================== */
 
 .hero {
   min-height: 450px;
-  background: url('/images/banner.webp') no-repeat center center;
+  background: url("/images/banner.webp") no-repeat center center;
   background-size: cover;
 }
 
@@ -313,14 +296,14 @@ span {
 
 .hero h1 {
   font-size: 32px;
-  font-family: 'Albert Sans', sans-serif;
+  font-family: "Albert Sans", sans-serif;
   font-weight: 900;
   color: #000;
 }
 
 .hero p {
   margin: 20px 0;
-  font-family: 'Albert Sans', sans-serif;
+  font-family: "Albert Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 19px;
@@ -340,7 +323,7 @@ span {
   border-radius: 3px;
   border: none;
 
-  font-family: 'Albert Sans', sans-serif;
+  font-family: "Albert Sans", sans-serif;
   font-weight: 600;
   font-style: normal;
   font-size: 14px;
@@ -363,7 +346,7 @@ span {
 
 .category-bottom {
   height: 17px;
-  background: #EEF430;
+  background: #eef430;
 }
 
 /* This makes the bar actually visible */
@@ -409,7 +392,6 @@ span {
 /* ============================= */
 
 .scroller-container {
-
   overflow: hidden;
   margin: 10px 48px;
   background: #fff;
@@ -417,7 +399,6 @@ span {
 }
 
 .scrollers-containers {
-
   overflow: hidden;
   margin: 10px 48px;
   background: #000000;
@@ -456,7 +437,7 @@ span {
   font-weight: 400;
   padding: 0 30px;
   white-space: nowrap;
-  font-family: 'ABeeZee', sans-serif;
+  font-family: "ABeeZee", sans-serif;
   transition: opacity 0.2s ease;
 }
 
@@ -473,7 +454,7 @@ span {
   font-weight: 400;
   padding: 0 30px;
   white-space: nowrap;
-  font-family: 'ABeeZee', sans-serif;
+  font-family: "ABeeZee", sans-serif;
   transition: opacity 0.2s ease;
 }
 
@@ -497,8 +478,6 @@ span {
 /* ============================= */
 /* MOBILE ONLY SCROLL */
 /* ============================= */
-
-
 
 /* ============================= */
 /* SMOOTH INFINITE SCROLL */
@@ -578,13 +557,14 @@ span {
   font-size: 32px;
   font-style: normal;
   line-height: 1.3;
-  font-family: 'Albert Sans', sans-serif;
+  font-family: "Albert Sans", sans-serif;
   font-weight: 400;
 }
 
 .banner-container {
   position: relative;
   height: 142px;
+  font-family: "Albert Sans", sans-serif;
   background-color: #ffffff;
   overflow: hidden;
 }
@@ -610,11 +590,7 @@ span {
   width: 100%;
   height: 125px;
   background: #000000;
-  clip-path: polygon(0 -284%,
-      48% 45%,
-      100% 45%,
-      100% 100%,
-      0 100%) !important;
+  clip-path: polygon(0 -284%, 48% 45%, 100% 45%, 100% 100%, 0 100%) !important;
   z-index: 1;
 }
 
@@ -623,36 +599,28 @@ span {
 }
 
 .blueprint-section h4 {
-  font-family: 'Albert Sans', sans-serif;
+  font-family: "Albert Sans", sans-serif;
   font-weight: 600;
   font-size: 24px;
   line-height: 120%;
 }
 
 .blueprint-section p {
-  font-family: 'ABeeZee', sans-serif;
+  font-family: "ABeeZee", sans-serif;
   font-weight: 400;
   font-size: 17px;
   line-height: 150%;
 }
 
-
-
 /* Heading inside banner */
 .banner-container h2 {
- font-family: 'Albert Sans', sans-serif;
-  font-weight: 600;
   font-size: 32px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  color: #fff;
 
+  color: #fff;
 }
 
 /* ============================= */
 /* BLUEPRINT SECTION */
-
-
 
 /* ============================= */
 /* IMAGE RESPONSIVE */
@@ -686,13 +654,7 @@ span {
   left: 564px;
   transform: rotate(133deg);
 }
-.yellow-border:before {
-    width: 142px;
-    height: 16px;
-    top: -47px;
-    left: 569px;
-    transform: rotate(133deg);
-}
+
 /* Top Right Yellow Border */
 .yellow-border::after {
   content: "";
@@ -736,7 +698,9 @@ span {
   height: 100%;
   display: flex;
   flex-direction: column;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   background: #fff;
 }
 
@@ -748,7 +712,7 @@ span {
 
 /* TITLE */
 .service-card h3 {
-  font-family: 'Albert Sans', sans-serif;
+  font-family: "Albert Sans", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 1;
@@ -756,7 +720,7 @@ span {
 
 /* SUBTITLE */
 .subtitle {
-  font-family: 'Albert Sans', sans-serif;
+  font-family: "Albert Sans", sans-serif;
   font-weight: 600;
   font-style: italic;
   font-size: 16px;
@@ -766,7 +730,7 @@ span {
 
 /* DESCRIPTION */
 .services-section .description {
-  font-family: 'ABeeZee', sans-serif;
+  font-family: "ABeeZee", sans-serif;
   font-weight: 400;
   font-size: 17px;
   line-height: 1.4;
@@ -810,12 +774,6 @@ span {
   position: relative;
   overflow: hidden;
   text-decoration: none;
-  font-family: 'Albert Sans', sans-serif;
-font-weight: 500;
-font-size: 14px;
-line-height: 100%;
-letter-spacing: 0%;
-border-radius: 4px;
 }
 
 /* BUTTON HOVER ANIMATION */
@@ -855,7 +813,7 @@ border-radius: 4px;
   /* Maintains aspect ratio (no stretching) */
   display: block;
   /* Removes bottom whitespace gap */
- 
+  border-radius: 8px;
   /* Matches your professional UI style */
   object-fit: cover;
   /* Ensures image fills space cleanly */
@@ -865,21 +823,17 @@ border-radius: 4px;
 }
 
 .cta-section h2 {
-  font-family: 'Albert Sans', sans-serif;
+  font-family: "Albert Sans", sans-serif;
   font-weight: 700;
   font-size: 32px;
   line-height: 1;
   letter-spacing: 0;
-  color: #034A27;
+  color: #034a27;
 }
 
 .cta-subtext {
- font-family: 'ABeeZee', sans-serif;
-font-weight: 400;
-font-size: 24px;
-letter-spacing: 0%;
-color: #000;
-max-width: 490px;
+  font-size: 33px;
+  color: #000;
 }
 
 .btn-black {
@@ -892,10 +846,7 @@ max-width: 490px;
   align-items: center;
   text-decoration: none;
   max-width: 300px;
-  font-family: 'Albert Sans', sans-serif;
 }
-
-
 
 .footer-content {
   background-color: #000;
@@ -920,21 +871,9 @@ max-width: 490px;
   text-align: center;
   margin-top: 20px;
   font-size: 14px;
-  font-family: 'Albert Sans', sans-serif;
+  font-family: "Albert Sans", sans-serif;
   font-weight: 500;
-
 }
-
-
-
-
-
-
-
-
-
-
-
 
 .impact-section {
   background: #f3f3f3;
@@ -979,8 +918,6 @@ max-width: 490px;
 .title-box span {
   color: #eef430;
 }
-
-
 
 .bullet-wrapper {
   max-width: 700px;
@@ -1044,7 +981,6 @@ max-width: 490px;
    ========================================================================== */
 
 @media (max-width: 768px) {
-
   /* ================= HEADER ================= */
 
   .header {
@@ -1152,25 +1088,30 @@ max-width: 490px;
 
   .banner-container {
     height: 120px;
+    text-align: left;
+  }
+  .content-wrapper {
+    margin-left: -105px;
+    margin-top: -25px;
+  }
+  .content-wrapper h2 {
+    font-size: 18px;
   }
 
   .banner-container::before {
     height: 100px;
-    clip-path: polygon(0 0,
-        100% 0,
-        100% 25px,
-        70% 25px,
-        60% 100%,
-        0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 25px, 70% 25px, 60% 100%, 0 100%);
   }
 
   .banners-containers::before {
     height: 100px;
-    clip-path: polygon(0 -284%,
-        48% 45%,
-        100% 45%,
-        100% 100%,
-        0 100%) !important;
+    clip-path: polygon(
+      0 -284%,
+      48% 45%,
+      100% 45%,
+      100% 100%,
+      0 100%
+    ) !important;
   }
 
   /* ================= SERVICES ================= */
@@ -1234,13 +1175,11 @@ max-width: 490px;
   }
 }
 
-
 /* ==========================================================================
    2. TABLET (768px - 1024px)
    ========================================================================== */
 
 @media (min-width: 768px) and (max-width: 1024px) {
-
   .services-section {
     padding: 40px 20px;
   }
@@ -1267,13 +1206,11 @@ max-width: 490px;
   }
 }
 
-
 /* ==========================================================================
    3. DESKTOP (992px+)
    ========================================================================== */
 
 @media (min-width: 992px) {
-
   .navbar-collapse {
     display: flex !important;
     justify-content: flex-end;
@@ -1293,13 +1230,11 @@ max-width: 490px;
   }
 }
 
-
 /* ==========================================================================
    4. LARGE DESKTOP (1200px+)
    ========================================================================== */
 
 @media (min-width: 1200px) {
-
   .nav-custom {
     max-width: 1200px;
   }
@@ -1309,21 +1244,17 @@ max-width: 490px;
 .yellow {
   width: 100%;
   height: 15px;
-  background-color: #EEF430;
-
-
+  background-color: #eef430;
 }
 
 .black {
   width: 100%;
   height: 15px;
   background-color: #000;
-
 }
 
 .build {
   width: 92% !important;
-
 }
 
 .caseStd {
@@ -1354,31 +1285,37 @@ max-width: 490px;
   font-weight: 900 !important;
 }
 
-
 /* =========================
    DROPDOWN MENU FIX
 ========================= */
 
 .nav-item.dropdown {
   position: relative;
-  
 }
 
 /* Hide by default */
 .nav-item .dropdown-menu {
   opacity: 0;
   visibility: hidden;
-  transform: translateY(12px);
+
   transition: all 0.3s ease;
+
   display: block !important;
+
   position: absolute;
   top: 100%;
   left: 50%;
   transform: translateX(-50%) translateY(12px);
+
   min-width: 280px;
   padding: 14px;
+
   background: #ffffff;
   border: none;
+  border-radius: 18px;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.18);
+
   z-index: 9999;
 }
 
@@ -1387,12 +1324,15 @@ max-width: 490px;
   opacity: 1;
   visibility: visible;
 }
-.dropdown-item.active, .dropdown-item:active {
-    color: var(--bs-dropdown-link-active-color);
-    text-decoration: none;
-    background-color: #eef430 !important;
+.dropdown-item.active,
+.dropdown-item:active {
+  color: var(--bs-dropdown-link-active-color);
+  text-decoration: none;
+  background-color: #eef430 !important;
 }
-.dropdown-toggle::after{display: none !important;}
+.dropdown-toggle::after {
+  display: none !important;
+}
 
 /* Keep menu visible when hovering menu */
 .dropdown-menu:hover {
@@ -1405,13 +1345,20 @@ max-width: 490px;
   display: flex;
   align-items: center;
   gap: 14px;
+
   padding: 14px 18px;
   margin-bottom: 10px;
-  font-family: 'Albert Sans', sans-serif;
+
+  border-radius: 14px;
+
+  font-family: "Albert Sans", sans-serif;
   font-size: 17px;
   font-weight: 600;
+
   color: #000 !important;
   background: transparent;
+
+  transition: all 0.25s ease;
 }
 
 /* Remove last margin */
@@ -1421,16 +1368,30 @@ max-width: 490px;
 
 /* Yellow icon */
 
-
 /* Hover effect */
 .dropdown-item:hover {
   background: #f5f5f5;
   color: #000 !important;
 }
 
+/* Arrow top */
+.dropdown-menu::before {
+  content: "";
+
+  position: absolute;
+  top: -10px;
+  left: 50%;
+
+  transform: translateX(-50%) rotate(45deg);
+
+  width: 20px;
+  height: 20px;
+
+  background: #fff;
+}
+
 /* Mobile */
 @media (max-width: 991px) {
-
   .nav-item .dropdown-menu {
     position: static;
     transform: none !important;
@@ -1449,27 +1410,4 @@ max-width: 490px;
     font-size: 15px;
     padding: 12px 14px;
   }
-}
-
-
-
-
-
-
-/* *********** About Page Fonts Size All **************** */
-
-.fontmainText,
-.WhatFontSize,
-.boxFont,
-.ourFont16 {
-  font-size: 16px !important;
-}
-
-.fontPeopleTitle,
-.whatFontText {
-  font-size: 24px !important;
-}
-
-.OurFontSize {
-  font-size: 32px !important;
 }
