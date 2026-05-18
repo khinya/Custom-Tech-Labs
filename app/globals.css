@@ -40,7 +40,7 @@ span {
 }
 
 /* ==========================================================================
-   2. LAYOUT CONTAINERS
+   2. LAYOUT CONTAINERS ok
    ========================================================================== */
 
 .container-outer {
@@ -1090,10 +1090,12 @@ span {
     height: 120px;
     text-align: left;
   }
+
   .content-wrapper {
     margin-left: -105px;
     margin-top: -25px;
   }
+
   .content-wrapper h2 {
     font-size: 18px;
   }
@@ -1105,13 +1107,11 @@ span {
 
   .banners-containers::before {
     height: 100px;
-    clip-path: polygon(
-      0 -284%,
-      48% 45%,
-      100% 45%,
-      100% 100%,
-      0 100%
-    ) !important;
+    clip-path: polygon(0 -284%,
+        48% 45%,
+        100% 45%,
+        100% 100%,
+        0 100%) !important;
   }
 
   /* ================= SERVICES ================= */
@@ -1324,12 +1324,14 @@ span {
   opacity: 1;
   visibility: visible;
 }
+
 .dropdown-item.active,
 .dropdown-item:active {
   color: var(--bs-dropdown-link-active-color);
   text-decoration: none;
   background-color: #eef430 !important;
 }
+
 .dropdown-toggle::after {
   display: none !important;
 }
