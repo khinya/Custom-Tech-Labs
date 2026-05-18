@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { FaCheck } from "react-icons/fa6";
+import Btn from "./btn";
 
 const applicationData = [
   "Operational platforms that replace manual processes.",
@@ -32,7 +33,7 @@ export default function CustomApplicationsImpact() {
         {/* Impact List */}
         <div className="row">
           <div className="col-12 col-lg-9">
-            <div className="d-flex flex-column gap-3">
+            <div className="d-flex flex-column gap-3 border-2-yellow">
               {applicationData.map((item, idx) => (
                 <div
                   key={idx}
@@ -53,7 +54,7 @@ export default function CustomApplicationsImpact() {
 
                   {/* Text */}
                   <h2
-                    className="fw-semibold mb-0"
+                    className="fw-bold mb-0"
                     style={{ fontSize: "calc(1rem + 0.3vw)" }}
                   >
                     {item}
@@ -70,7 +71,7 @@ export default function CustomApplicationsImpact() {
           style={{ backgroundColor: "#d9d9d9" }}
         >
           {/* Inner Black Highlight Box */}
-          <div className="col-12 col-lg-10 bg-black rounded-4 p-4 p-md-5 text-center shadow-lg">
+          <div className="col-12 col-lg-11 bg-black rounded-4 p-4 p-md-5 text-center shadow-lg">
             <h2
               className="text-white fw-bold mb-0"
               style={{ fontSize: "calc(1.5rem + 1.5vw)", lineHeight: "1.1" }}
@@ -86,28 +87,7 @@ export default function CustomApplicationsImpact() {
 
           {/* Action Buttons */}
           <div className="d-flex flex-column flex-sm-row gap-3 mt-3">
-            <Link
-              href="/"
-              className="btn fw-bold px-4 py-2 text-black hover-scale d-flex align-items-center justify-content-center"
-              style={{
-                backgroundColor: "#EEF430",
-                minWidth: "170px",
-                height: "45px",
-              }}
-            >
-              View our Portfolio
-            </Link>
-            <Link
-              href="/solutionservice"
-              className="btn fw-bold px-4 py-2 text-black hover-scale d-flex align-items-center justify-content-center"
-              style={{
-                backgroundColor: "#EEF430",
-                minWidth: "170px",
-                height: "45px",
-              }}
-            >
-              Work With Us
-            </Link>
+            <Btn />
           </div>
         </div>
       </div>

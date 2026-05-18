@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import Btn from "./btn";
 
 export default function SameSystem() {
   return (
@@ -57,28 +58,7 @@ export default function SameSystem() {
           </p>
 
           <div className="d-flex flex-column flex-sm-row gap-3">
-            <Link
-              href="/"
-              className="btn fw-bold px-4 py-2 hover-scale text-black d-flex align-items-center justify-content-center"
-              style={{
-                backgroundColor: "#EEF430",
-                minWidth: "170px",
-                height: "44px",
-              }}
-            >
-              View our Portfolio
-            </Link>
-            <Link
-              href="/solutionservice"
-              className="btn fw-bold px-4 py-2 hover-scale text-black d-flex align-items-center justify-content-center"
-              style={{
-                backgroundColor: "#EEF430",
-                minWidth: "170px",
-                height: "44px",
-              }}
-            >
-              Work With Us
-            </Link>
+            <Btn/>
           </div>
         </div>
 
@@ -121,28 +101,7 @@ export default function SameSystem() {
           </p>
 
           <div className="d-flex flex-column flex-sm-row gap-3">
-            <Link
-              href="/"
-              className="btn fw-bold px-4 py-2 hover-scale text-black d-flex align-items-center justify-content-center"
-              style={{
-                backgroundColor: "#EEF430",
-                minWidth: "170px",
-                height: "44px",
-              }}
-            >
-              View our Portfolio
-            </Link>
-            <Link
-              href="/solutionservice"
-              className="btn fw-bold px-4 py-2 hover-scale text-black d-flex align-items-center justify-content-center"
-              style={{
-                backgroundColor: "#EEF430",
-                minWidth: "170px",
-                height: "44px",
-              }}
-            >
-              Work With Us
-            </Link>
+            <Btn />
           </div>
         </div>
       </div>

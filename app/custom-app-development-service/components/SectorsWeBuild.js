@@ -33,7 +33,7 @@ export default function SectorsWeBuild() {
           className="fw-normal mb-0"
           style={{ fontSize: "calc(0.9rem + 0.2vw)" }}
         >
-          <span className="fw-bold">
+          <span className="fw-bold fst-italic">
             Different industries. Same friction. Same fix.
           </span>
           <span className="d-none d-md-inline">
@@ -87,7 +87,7 @@ export default function SectorsWeBuild() {
       {/* Bottom Statement */}
       <div className="mb-5 text-center px-3">
         <h2
-          className="fw-normal mx-auto"
+          className="fw-bold mx-auto fst-italic" 
           style={{ fontSize: "calc(0.9rem + 0.3vw)", maxWidth: "700px" }}
         >
           The industries may differ, but the goal stays the same:

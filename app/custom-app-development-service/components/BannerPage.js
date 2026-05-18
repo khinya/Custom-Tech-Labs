@@ -9,7 +9,7 @@ export default function Hero() {
           <div className="hero-box">
             <div className="row align-items-center">
               <div className="col-lg-6">
-                <h1>Custom Apps That Teams Adopt And Customers Love Using</h1>
+                <h1 className="fs-1">Custom Apps That Teams Adopt And Customers Love Using</h1>
 
                 <p>
                   Tech that removes friction, simplifies decisions, and becomes
