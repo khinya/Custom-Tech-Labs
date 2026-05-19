@@ -9,7 +9,7 @@ export default function Footer() {
 
           <div className="logo-text">
             <Image
-              src="/images/logo1.png"
+              src="/images/logo.webp"
               width={200}
               height={150}
               className="logo1"
