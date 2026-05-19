@@ -101,7 +101,14 @@ export default function BannerPage() {
             `}</style>
 
             </section>
-            <div className="bottom-border" style={{ position: "relative !important" }}></div>
+            <div
+                style={{
+                    width: "100%",
+                    height: "40px",
+                    background: "#eff430",
+                    borderBottom: "20px solid #000",
+                }}
+            ></div>
 
         </>);
 }

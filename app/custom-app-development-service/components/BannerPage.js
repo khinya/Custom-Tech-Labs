@@ -29,7 +29,14 @@ export default function Hero() {
         </div>
         {/* Rectangle 178 - Yellow Accent Bar */}
       </section>
-      <div className="hero-accent-bar"></div>
+      <div
+        style={{
+          width: "100%",
+          height: "40px",
+          background: "#eff430",
+          borderBottom: "20px solid #000",
+        }}
+      ></div>
     </>
   );
 }
