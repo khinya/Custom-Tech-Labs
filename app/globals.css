@@ -1413,3 +1413,77 @@ span {
     padding: 12px 14px;
   }
 }
+
+/* -------- Ritish Arora -------*/
+.tagline {
+
+  color: #ffe430;
+}
+
+.email-btn {
+  background-color: #ffe430;
+  border-radius: 7px;
+  height: 26px;
+  width: 103px;
+  border: none;
+}
+
+.social-icons {
+  font-size: 14px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.logo1 {
+  margin-top: -44px;
+  margin-left: -40px;
+  height: auto;
+  width: auto;
+}
+
+.footer-container {
+  box-sizing: border-box;
+}
+
+.forRes {
+  font-size: 18px;
+}
+
+@media(max-width:768px) {
+  .footer-column {
+    margin-left: 60px;
+
+  }
+
+  .footer-column a {
+    font-size: 18px;
+  }
+
+  .forRes {
+    font-size: 25px;
+  }
+}
+
+.hero-accent-bar {
+  position: absolute;
+  width: 100%;
+  border-top: 22px solid #eef430;
+  border-bottom: 22px solid #000;
+  margin-top: -65px;
+
+}
+
+.bottom-border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-top: 15px solid #eff430;
+  border-bottom: 15px solid #000;
+}
+
+@media (max-width: 767px) {
+  section {
+    background-image: none !important;
+  }
+}
