@@ -37,6 +37,7 @@ export default function BannerPage() {
             <div
                 style={{
                     width: "100%",
+                    height: "40px",
                     background: "#eff430",
                     borderBottom: "20px solid #000",
                 }}

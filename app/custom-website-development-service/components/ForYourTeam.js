@@ -12,7 +12,7 @@ export default function ForYourTeam() {
     return (
         <>
 
-            <section className="container-fluid mb-5 py-5" style={{ backgroundColor: '#f3f3f3', marginTop: "-5%" }}>
+            <section className="container-fluid mb-5 py-5" >
                 <div className="container py-lg-5" style={{ width: '90%' }}>
 
                     {/* Top Heading */}<div class="text-center">
