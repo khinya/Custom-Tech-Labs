@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function ForYourCustomers() {
     return (
-        <section className="container-fluid py-5" style={{ backgroundColor: '#f3f3f3', marginTop: "-10%" }}>
+        <section className="container-fluid py-5">
             <div className="container py-5 px-4 px-md-5 rounded-5" style={{ backgroundColor: '#ebebeb', width: '90%' }}>
 
                 {/* Section Header */}

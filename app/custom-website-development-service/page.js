@@ -22,7 +22,7 @@ export default function CustomWebiste() {
             <BannerPage />
           </section>
 
-          <section>
+          <section style={{ background: '#F5F5F5' }}>
             <ForYourTeam />
           </section>
 

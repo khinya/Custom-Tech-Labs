@@ -11,7 +11,7 @@ export default function SameSystem() {
     >
       {/* Main Section Header */}
   <button className="design-spec-cta">
-  Two Sides of the Same System 1  
+  Two Sides of the Same System  
 
 </button>
 

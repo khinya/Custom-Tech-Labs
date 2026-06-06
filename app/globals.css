@@ -131,6 +131,8 @@ font-size: 2rem;
 .bg-custome {
 background-color: #f5f5f5;
 }
+
+
 /* ==========================================================================
 3. HEADER & NAVIGATION
 ========================================================================== */
@@ -272,11 +274,187 @@ transition: transform 0.2s ease-in-out;
 transform: translateY(-5px); 
 }
 
-  .design-spec-cta {
-    position: absolute;
-    top: 579px;
-    left: 298px;
-    width: 845px;
+.team-subheading {
+  /* Typography */
+  font-family: 'Albert Sans', sans-serif;
+  font-weight: 700;
+  font-style: normal; /* Fixed from "Bold" */
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  
+  /* Layout & Presentation */
+  text-align: center;
+  color: #034A27; /* Fixed "coler" typo to standard dark forest green */
+} 
+.website-dependency-banner {
+  /* Typography Layout Specs */
+  font-family: 'Albert Sans', sans-serif;
+  font-weight: 600;   /* Equal to fw-semibold */
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: left;
+  color: #212529;      /* Matches text-dark */
+  margin-bottom: 30px;
+  /* Box Layout Model */
+  max-width: 900px;
+  margin-top: 2rem;
+
+  display: block;      /* Replicates standard block level heading behavior */
+}
+.operational-desc-text {
+  /* Typography Layout Specs */
+  font-family: 'Albert Sans', sans-serif;
+  font-weight: 400; /* Regular weight */
+  font-style: normal;
+  font-size: 16px;
+  line-height: 150%; /* Changed from 100% to 150% (or lh-base) for optimal multi-line paragraph readability */
+  letter-spacing: 0%;
+  
+  /* Presentation & Spacing */
+  color: #000;
+  margin-bottom: 1.5rem; /* Replaces mb-4 with a clean, static standard spacer */
+  text-align: left;
+}
+.website-features-text {
+  /* Typography Layout Specs */
+  font-family: 'Albert Sans', sans-serif;
+  font-weight: 400; /* Regular weight */
+  font-size: 16px;
+  line-height: 140%; /* Balanced line-height to prevent overlapping text lines */
+  letter-spacing: 0%;
+  text-align: left;
+
+  /* Presentation & Layout Spacing */
+  color: #8d8d8d; /* Your custom lighter gray */
+  margin-bottom: 1.5rem; /* Standard replacement for mb-4 */
+}
+
+.points-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; 
+}
+
+.points-list-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem; 
+}
+
+.list-cross-icon {
+  flex-shrink: 0;
+  stroke-width: 0.3;
+}
+
+.bg-black{
+
+ 
+  
+  /* Presentation & Box Model */
+  border-radius: 8px;
+  opacity: 1;
+  transform: rotate(0deg);
+
+  align-items: center;
+  justify-content: center;}
+.result-card-heading {
+  margin-top: 0;
+  margin-bottom: 0.5rem; /* Standard replacement for mb-2 */
+  color: #EEF430;        /* Your signature accent neon yellow */
+
+  font-family: 'Albert Sans', sans-serif;
+  font-weight: 700;      /* Keeps the title crisp and bold */
+  font-size: 20px;
+  line-height: 120%;
+}
+
+.result-card-text {
+  margin-bottom: 0;      /* Standard replacement for mb-0 */
+  color: #ffffff;
+  
+  /* Typography Configuration from Specs */
+  font-family: 'Albert Sans', sans-serif;
+
+  font-style: normal;
+  font-size: 18px;       /* Updated from 15px */
+  line-height: 140%;     /* Clean line-height layer to make multi-line rendering readable */
+  letter-spacing: 0%;
+  opacity: 0.9;
+}
+
+
+.points-list-text {
+  margin: 0; 
+  color: #979797; 
+  font-family: 'Albert Sans', sans-serif;
+  font-weight: 600; 
+  font-size: 16px; 
+  line-height: 120%;
+  letter-spacing: 0%;
+}
+
+.btn-group-container {
+  display: flex;
+  gap: 1rem;         /* Clean replacement for gap-3 */
+  margin-top: 20px;
+}
+
+.btn-action-primary {
+  /* Layout Box Model & Dimensions */
+  min-width: 158px;
+  min-height: 30px;
+  padding: 6px 16px; /* Strategic padding to maintain text safety inside tight height limits */
+  border: none;
+  border-radius: 3px;
+  opacity: 1;
+  cursor: pointer;
+
+  /* Flex centering to align text and arrows perfectly */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* Presentation Colors */
+  background-color: #EEF430;
+  color: #000000;
+
+  /* Typography Layout Specs */
+  font-family: 'Albert Sans', sans-serif;
+  font-weight: 600;   /* SemiBold weight specification */
+  font-style: normal;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  
+  /* Quick Interactive State */
+  transition: opacity 0.2s ease, transform 0.1s ease;
+}
+
+.btn-action-primary:hover {
+  opacity: 0.9;
+}
+
+.btn-action-primary:active {
+  transform: scale(0.98);
+}
+
+.control-heading {
+  font-family: 'Albert Sans', sans-serif;
+  font-weight: 600; 
+  font-style: normal;
+  font-size: 16px;
+  line-height: 100%; 
+  letter-spacing: 0%;
+  margin-bottom: 1.5rem; 
+  color: #212529; 
+  text-align: left;
+}
+
+  .design-spec-cta { 
+    width: 845px; 
     height: 99px;
     background: #EEF430;
     color: #000000;
@@ -296,7 +474,7 @@ transform: translateY(-5px);
   .design-spec-cta:hover {
     opacity: 0.9;
     transform: scale(0.99); /* Subtle press effect */
-  }
+  } 
 
 /* ============================= */
 /* SCROLLER CONTAINER */
@@ -1125,6 +1303,10 @@ height: 180px;
 font-size: 0.8rem;
 padding: 9px 14px;
 }
+
+
+
+
 /* ================= HERO ================= */
 .hero {
 padding: 40px 15px;
