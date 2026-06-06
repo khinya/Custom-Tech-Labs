@@ -174,16 +174,11 @@ transition: width 0.3s ease;
 .nav-link:hover::after {
 width: 100%;
 }
+
 /* CTA button */
-.btn-warning-custom {
-background: #eef430 !important;
-border: none;
-color: #000 !important;
-padding: 8px 16px;
-border-radius: 6px;
-font-weight: 600;
-transition: all 0.25s ease;
-}
+
+
+
 .btn-warning-custom:hover {
 transform: translateY(-2px);
 box-shadow: 0 6px 15px rgba(238, 244, 48, 0.3);
@@ -1023,6 +1018,7 @@ transform: translateX(4px);
 width: 100%;
 padding: 12px;
 margin-top: 10px;
+background: #eef430 !important;
 }
 .scroller-container {
 margin: 10px 15px;
