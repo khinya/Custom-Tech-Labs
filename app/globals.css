@@ -348,10 +348,138 @@ transform: translateY(-5px);
   stroke-width: 0.3;
 }
 
+
+
+
+.customers-heading {
+  /* Typography Layout Specs */
+  font-family: 'Albert Sans', sans-serif;
+  font-weight: 700;    /* Bold weight specification */
+  font-style: normal;
+  font-size: 24px;     /* Updated from 25px per design spec */
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;  /* Aligns nicely inside your text-center wrapper */
+
+  /* Presentation Presentation */
+  color: #034A27;      /* Your specified forest green */
+}
+ 
+
+.brand-experience-heading {
+  /* Typography Configuration from Specs */
+  font-family: 'Albert Sans', sans-serif;
+  font-weight: 600; /* SemiBold weight specification */
+  font-size: 24px;   /* Updated from 20px */
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: left;
+  color: #000000;    /* Fixed "coler" typo */
+
+  /* Layout Spacing */
+  margin-bottom: 1.5rem; /* Standardized replacement for mb-4 */
+}
+
+.interaction-perception-text {
+  /* Typography Configuration from Specs */
+  font-family: 'Albert Sans', sans-serif;
+  font-weight: 600; /* SemiBold weight specification */
+  font-style: normal;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #212529; 
+  text-align: left;
+  margin-bottom: 0px;
+}
+
+/* Main Body Paragraph */
+.digital-env-text {
+  font-family: 'Albert Sans', sans-serif;
+  font-weight: 500;   /* Medium weight from your design spec */
+  font-style: italic;
+  font-size: 16px;
+  line-height: 150%;  /* Increased slightly for clean multi-line readability */
+  letter-spacing: 0%;
+  color: #212529;      /* Matches text-dark */
+  margin-bottom: 1.5rem;
+}
+
+/* Bold Emphasized Text Inner Spans */
+.digital-env-text .highlight-bold {
+  font-weight: 700;   /* Bold weight design spec */
+  font-style: normal; /* Disables inherited italic text flow */
+}
+
+/* Sub-heading One */
+.platform-guide-heading {
+  font-family: 'Albert Sans', sans-serif;
+  font-weight: 600;   /* SemiBold */
+  font-style: italic;
+  font-size: 16px;    /* Standardized from 15px */
+  line-height: 120%;
+  color: #212529;
+  margin-bottom: 1rem;
+}
+
+/* Sub-heading Two */
+.function-heading {
+  font-family: 'Albert Sans', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 16px;    /* Standardized from 15px */
+  line-height: 120%;
+  color: #212529;
+  margin-bottom: 0.5rem;
+}
+
+/* Confidence Inner Badge Element */
+.confidence-badge {
+  display: inline-block;
+  background-color: #000000;
+  padding: 0.25rem 0.75rem; /* Replaces px-1 py-1 for clean text breathing space */
+  border-radius: 4px;
+}
+
+.confidence-badge-text {
+  margin: 0;
+  color: #EEF430;      /* Your signature neon yellow accent color */
+  font-family: 'Albert Sans', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 16px;    /* Cleaned from 0.9rem */
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+
+
+
+.speed-badge-container {
+  display: inline-block;
+  background-color: #000000;
+  padding: 0.25rem 1rem; /* Replaces px-3 py-1 with solid baseline units */
+  border-radius: 4px;    /* Adds a subtle corner roundness to match modern badge styles */
+  margin-top: 1rem;      /* Replaces the problematic -10% negative margin */
+}
+
+.speed-badge-text {
+  margin: 0;             /* Replaces mb-0 */
+  color: #EEF430;        /* Fixed the "coler" typo from your design spec */
+
+  /* Typography Configuration from Specs */
+  font-family: 'Albert Sans', sans-serif;
+  font-weight: 600;      /* SemiBold weight specification */
+  font-style: normal;
+  font-size: 16px;       /* Updated to match your exact spec */
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
 .bg-black{
 
  
-  
+
   /* Presentation & Box Model */
   border-radius: 8px;
   opacity: 1;
