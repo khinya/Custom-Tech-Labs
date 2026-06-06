@@ -9,7 +9,7 @@ export default function Hero() {
           <div className="hero-box">
             <div className="row align-items-center">
               <div className="col-lg-6">
-                <h1>Custom Apps That Teams Adopt And Customers Love Using</h1>
+                <h1 className="fs-1">Custom Apps That Teams Adopt And Customers Love Using</h1>
 
                 <p>
                   Tech that removes friction, simplifies decisions, and becomes
@@ -29,7 +29,14 @@ export default function Hero() {
         </div>
         {/* Rectangle 178 - Yellow Accent Bar */}
       </section>
-      <div className="hero-accent-bar"></div>
+      <div
+        style={{
+          width: "100%",
+          height: "40px",
+          background: "#eff430",
+          borderBottom: "20px solid #000",
+        }}
+      ></div>
     </>
   );
 }

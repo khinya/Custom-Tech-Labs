@@ -10,113 +10,99 @@ const points = [
 
 export default function ForYourTeam() {
     return (
-        <section className="container-fluid mb-5 py-5" style={{ backgroundColor: '#f3f3f3', marginTop: "-5%" }}>
-            <div className="container py-lg-5" style={{ width: '90%' }}>
+        <>
 
-                {/* Top Heading */}<div class="text-center">
-                    <h1 style={{ backgroundColor: "yellow", textAlign: "center", paddingTop: "2%", paddingBottom: "2%", marginLeft: "15%", marginRight: "15%", fontSize: "200%" }}>
-                        Two Sides of the Same System
-                    </h1>
-                </div>
-                <div className="text-center mb-5 mt-4">
-                    <h2 className="fw-bold" style={{ color: '#014421', fontSize: '25px' }}>
-                        For Your Team
-                    </h2>
+            <section className="container-fluid mb-5 py-5" >
+                <div className="container py-lg-5" style={{ width: '90%' }}>
 
-                </div>
-                <h1 className="mt-3 fw-semibold fst-italic lh-tight text-dark "
-                    style={{ fontSize: '20px', maxWidth: '900px', textAlign: "left", marginBottom: "-6%", marginTop: "5%", }}>
-                    Your website shouldn’t create operational dependency
-                </h1>
-
-                {/* Main Content Row */}
-                <div className="row g-4 g-lg-5 align-items-start mt-4">
-
-                    <div className="col-12 col-lg-7">
-                        <div className="rounded-3 overflow-hidden shadow-sm">
-                            <Image
-                                src="/web/same.jpg"
-                                width={700}
-                                height={700}
-                                alt="Team Image"
-                                className="img-fluid w-100 object-fit-cover"
-                                style={{ height: "600px", width: "800px" }}
-                            />
-                        </div>
+                    {/* Top Heading */}<div class="text-center">
+                        <h1 style={{ backgroundColor: "yellow", textAlign: "center", paddingTop: "2%", paddingBottom: "2%", marginLeft: "15%", marginRight: "15%", fontSize: "200%" }}>
+                            Two Sides of the Same System
+                        </h1>
                     </div>
+                    <div className="text-center mb-5 mt-4">
+                        <h2 className="fw-bold" style={{ color: '#014421', fontSize: '25px' }}>
+                            For Your Team
+                        </h2>
 
+                    </div>
+                    <h1 className="mt-3 fw-semibold fst-italic lh-tight text-dark "
+                        style={{ fontSize: '20px', maxWidth: '900px', textAlign: "left", marginBottom: "-6%", marginTop: "5%", }}>
+                        Your website shouldn’t create operational dependency
+                    </h1>
 
+                    {/* Main Content Row */}
+                    <div className="row g-4 g-lg-5 align-items-start mt-4">
 
-
-                    {/* Left Image Column */}
-                    {/* <div className="col-12 col-lg-7 ">
-                        <div className="rounded-3 overflow-hidden shadow-sm  ">
-                            <Image
-                                src="/web/same.jpg"
-                                width={700}
-                                height={500}
-                                alt="Team Image"
-                                // style={{marginTop:"-50px"}}
-                                className="img-fluid w-100 h-auto object-fit-cover"
-                                
-                            />
-                        </div>
-                    </div> */}
-
-                    {/* Right Content Column */}
-                    <div className="col-12 col-lg-5" >
-                        <p className="fs-5 lh-base mb-4" style={{ color: '#1f1f1f', fontSize: '15px' }}>
-                            If every update requires developer support,
-                            momentum slows. If systems don’t connect, your team
-                            compensates manually.
-                        </p>
-
-                        <h3 className="fw-bold lh-snug mb-4" style={{ fontSize: '15px' }}>
-                            Well-structured custom website development restores control.
-                        </h3>
-
-                        <p className="fst-italic lh-lg mb-4" style={{ color: '#8d8d8d', fontSize: '15px' }}>
-                            We build custom websites that integrate your tools,
-                            simplify workflows and give your team structured control.
-                        </p>
-
-                        {/* Negative Points List */}
-                        <div className="d-flex flex-column gap-3 mb-5">
-                            {points.map((item, idx) => (
-                                <div key={idx} className="d-flex align-items-center gap-3">
-                                    <RxCross2 className="text-danger flex-shrink-0" size={28} style={{ strokeWidth: '1.5', fontSize: '15px' }} />
-                                    <h4 className="mb-0 fw-semibold" style={{ color: '#7a7a7a', fontSize: '1.2rem', fontSize: '15px' }}>
-                                        {item}
-                                    </h4>
-                                </div>
-                            ))}
+                        <div className="col-12 col-lg-7">
+                            <div className="rounded-3 overflow-hidden shadow-sm">
+                                <Image
+                                    src="/web/same.jpg"
+                                    width={700}
+                                    height={700}
+                                    alt="Team Image"
+                                    className="img-fluid w-100 object-fit-cover"
+                                    style={{ height: "600px", width: "800px" }}
+                                />
+                            </div>
                         </div>
 
-                        {/* Result Box */}
-                        <div className="bg-black p-4 rounded-4 shadow">
-                            <h3 className="fw-bold mb-2" style={{ color: '#EEF430', fontSize: '1.4rem', fontSize: '15px' }}>
-                                The result is simple:
-                            </h3>
-                            <p className="text-white mb-0 fs-5 text-nowrap" fs-1>
-                                You’ll gain clarity, efficiency and full autonomy.
+
+
+                        <div className="col-12 col-lg-5" >
+                            <p className="fs-5 lh-base mb-4" style={{ color: '#1f1f1f', fontSize: '15px' }}>
+                                If every update requires developer support,
+                                momentum slows. If systems don’t connect, your team
+                                compensates manually.
                             </p>
-                            {/* <p className="text-white mb-0 fs-5 lh-relaxed" fs-1 >
+
+                            <h3 className="fw-bold lh-snug mb-4" style={{ fontSize: '15px' }}>
+                                Well-structured custom website development restores control.
+                            </h3>
+
+                            <p className="fst-italic lh-lg mb-4" style={{ color: '#8d8d8d', fontSize: '15px' }}>
+                                We build custom websites that integrate your tools,
+                                simplify workflows and give your team structured control.
+                            </p>
+
+                            {/* Negative Points List */}
+                            <div className="d-flex flex-column gap-3 mb-5">
+                                {points.map((item, idx) => (
+                                    <div key={idx} className="d-flex align-items-center gap-3">
+                                        <RxCross2 className="text-danger flex-shrink-0" size={28} style={{ strokeWidth: '1.5', fontSize: '15px' }} />
+                                        <h4 className="mb-0 fw-semibold" style={{ color: '#7a7a7a', fontSize: '1.2rem', fontSize: '15px' }}>
+                                            {item}
+                                        </h4>
+                                    </div>
+                                ))}
+                            </div>
+
+                            {/* Result Box */}
+                            <div className="bg-black p-4 rounded-4 shadow">
+                                <h3 className="fw-bold mb-2" style={{ color: '#EEF430', fontSize: '1.4rem', fontSize: '15px' }}>
+                                    The result is simple:
+                                </h3>
+                                <p className="text-white mb-0 fs-5 text-nowrap" fs-1>
+                                    You’ll gain clarity, efficiency and full autonomy.
+                                </p>
+                                {/* <p className="text-white mb-0 fs-5 lh-relaxed" fs-1 >
                                 You’ll gain clarity, efficiency and full autonomy.
                             </p> */}
-                        </div>
-                        <div class="d-flex gap-3" style={{ marginTop: "20px" }}>
-                            <button class="btn  text-dark" style={{ backgroundColor: "yellow" }}>
-                                View Our Portfolio  →
-                            </button>
-                            <button class="btn  text-dark" style={{ backgroundColor: "yellow" }}>
-                                Work With Us  →
-                            </button>
+                            </div>
+                            <div class="d-flex gap-3" style={{ marginTop: "20px" }}>
+                                <button class="btn  text-dark" style={{ backgroundColor: "yellow" }}>
+                                    View Our Portfolio  →
+                                </button>
+                                <button class="btn  text-dark" style={{ backgroundColor: "yellow" }}>
+                                    Work With Us  →
+                                </button>
+
+                            </div>
 
                         </div>
-
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </>
     );
 }
