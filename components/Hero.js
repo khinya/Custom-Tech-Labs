@@ -6,7 +6,7 @@ export default function Hero() {
           <div className="row align-items-center">
             <div className="col-lg-6">
               <h1>
-                Technology Built for the 1212 <br />
+                Technology Built for the  <br />
                 Way People Actually Work
               </h1>
 
