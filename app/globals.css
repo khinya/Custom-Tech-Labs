@@ -174,11 +174,16 @@ transition: width 0.3s ease;
 .nav-link:hover::after {
 width: 100%;
 }
-
 /* CTA button */
-
-
-
+.btn-warning-custom {
+background: #eef430 !important;
+border: none;
+color: #000 !important;
+padding: 8px 16px;
+border-radius: 6px;
+font-weight: 600;
+transition: all 0.25s ease;
+}
 .btn-warning-custom:hover {
 transform: translateY(-2px);
 box-shadow: 0 6px 15px rgba(238, 244, 48, 0.3);
@@ -197,7 +202,7 @@ margin: 0 auto;
 padding: 10px 20px;
 }
 .hero h1 {
-font-size: 32px;
+font-size: 32px !important; 
 font-family: "Albert Sans", sans-serif;
 font-weight: 900;
 color: #000;
@@ -264,8 +269,35 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 transition: transform 0.2s ease-in-out;
 }
 .custom-shadow:hover {
-transform: translateY(-5px);
+transform: translateY(-5px); 
 }
+
+  .design-spec-cta {
+    position: absolute;
+    top: 579px;
+    left: 298px;
+    width: 845px;
+    height: 99px;
+    background: #EEF430;
+    color: #000000;
+    border: none;
+    border-radius: 12px;
+    font-family: 'Albert Sans', sans-serif;
+    font-weight: 700; 
+    font-size: 32px;
+    line-height: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+
+  .design-spec-cta:hover {
+    opacity: 0.9;
+    transform: scale(0.99); /* Subtle press effect */
+  }
+
 /* ============================= */
 /* SCROLLER CONTAINER */
 /* ============================= */
@@ -405,7 +437,7 @@ position: absolute;
 top: 0;
 left: 0;
 width: 100%;
-height: 125px;
+height: 135px;
 background: #000000;
 clip-path: polygon(0 0, 100% 0, 100% 30px, 686px 30px, 594px 100%, 0 100%);
 z-index: 1;
@@ -459,10 +491,10 @@ z-index: 2;
 content: "";
 position: absolute;
 background-color: #eef430;
-width: 154px;
-height: 20px;
-top: -42px;
-left: 564px;
+width: 137px;
+height: 14px;
+top: -44px;
+left: 574px;
 transform: rotate(133deg);
 }
 .yellow-border::after {
@@ -507,6 +539,7 @@ transition:
 transform 0.3s ease,
 box-shadow 0.3s ease;
 background: #fff;
+border-radius: 10px
 }
 /* HOVER EFFECT */
 .service-card:hover {
@@ -1018,7 +1051,6 @@ transform: translateX(4px);
 width: 100%;
 padding: 12px;
 margin-top: 10px;
-background: #eef430 !important;
 }
 .scroller-container {
 margin: 10px 15px;
@@ -1121,4 +1153,4 @@ font-size: 18px;
 .forRes {
 font-size: 25px;
 }
-} 
+}

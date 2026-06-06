@@ -11,8 +11,8 @@ export default function ProcessContainer() {
         <span className="step-label">STEP 1:</span>
         <h2 className="title">We Listen for the "Why"</h2>
         <p className="description">
-          Before we touch a keyboard, we figure out why you’re building this in the first place.
-          We dig for the friction in your current process so we can create a solution that actually clears the path.
+         Before we touch a keyboard, we figure out why you’re building this in the first place. We dig for the friction in your current process so we can create a solution that actually clears the path.
+
         </p>
       </div>
     </div>
@@ -25,8 +25,7 @@ export default function ProcessContainer() {
         <span className="step-label">STEP 2:</span>
         <h2 className="title">Design for Real People</h2>
         <p className="description">
-          We map out an experience that makes sense at a glance.
-          We want your team and your customers to actually want to use the tool.
+       We map out an experience that makes sense at a glance. We want your team and your customers to actually want to use the tool, rather than feeling like they're fighting against it.
         </p>
       </div>
     </div>
@@ -40,8 +39,8 @@ export default function ProcessContainer() {
         <span className="step-label">STEP 3:</span>
         <h2 className="title">The Muscle to Build It Right</h2>
         <p className="description">
-          We hand-pick the right technology to build a robust, custom foundation.
-          No templates, no shortcuts.
+          We hand-pick the right technology to build a robust, custom foundation. No templates, no shortcuts, and no "black box" code that you’re stuck with and can’t manage later.
+
         </p>
       </div>
     </div>
@@ -55,7 +54,8 @@ export default function ProcessContainer() {
         <span className="step-label">STEP 4:</span>
         <h2 className="title">Zero-Friction Launch</h2>
         <p className="description">
-          We collaborate with you on the rollout so it feels natural from day one.
+          We collaborate with you on the heavy lifting of the rollout. Our goal is that on day one, the new tech feels like it has always been a natural part of your workflow.
+
         </p>
       </div>
     </div>
@@ -69,7 +69,8 @@ export default function ProcessContainer() {
         <span className="step-label">STEP 5:</span>
         <h2 className="title">Refining the Reality</h2>
         <p className="description">
-          We improve the system using real-world usage data continuously.
+         Post-launch, we stay in the trenches with you. 
+We use real-world data to see how people are actually clicking and scrolling. If it’s not making life easier for your users, we fix it.
         </p>
       </div>
     </div>

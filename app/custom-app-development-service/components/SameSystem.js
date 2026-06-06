@@ -10,12 +10,10 @@ export default function SameSystem() {
       style={{ padding: "0px 67px" }}
     >
       {/* Main Section Header */}
-      <h1
-        className="bg-black text-white p-4 rounded-4 fw-bold mb-3 w-100  text-center text-md-start"
-        style={{ fontSize: "calc(1.3rem + .8vw)", maxWidth: "60%" }}
-      >
-        Two Sides of the Same System
-      </h1>
+  <button className="design-spec-cta">
+  Two Sides of the Same System 1  
+
+</button>
 
       {/* Content Boxes Container */}
       <div className="w-100 d-flex flex-column gap-5">
@@ -54,8 +52,8 @@ export default function SameSystem() {
             operational leverage. <br />
             <br />
             Let’s centralize workflows, connect systems, and give leadership
-            real-time visibility without overwhelming your team.
-          </p>
+            real-time visibility without overwhelming your team. 
+          </p> 
 
           <div className="d-flex flex-column flex-sm-row gap-3">
             <Btn/>

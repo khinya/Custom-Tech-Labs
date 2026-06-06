@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 
 const testimonials = [
@@ -44,15 +44,39 @@ const testimonials = [
 
 export default function Testimonials() {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
+  
+  // Slide duration in milliseconds (e.g., 5000ms = 5 seconds)
+  const SLIDE_DURATION = 5000; 
+  const totalSlides = testimonials.length - 1; // Syncs with your 2-card desktop layout
+
+  useEffect(() => {
+    // If the user is hovering over the testimonial, don't slide automatically
+    if (isPaused) return;
+
+    const interval = setInterval(() => {
+      setActiveIndex((prevIndex) => {
+        if (prevIndex >= totalSlides - 1) {
+          return 0; // Loop back to the start
+        }
+        return prevIndex + 1;
+      });
+    }, SLIDE_DURATION);
+
+    // Clean up the interval on component unmount or when dependencies change
+    return () => clearInterval(interval);
+  }, [isPaused, totalSlides]);
 
   const cardOneData = testimonials[activeIndex];
   const cardTwoData = testimonials[activeIndex + 1] || testimonials[0];
 
   return (
-    <section className="testimonial-section">
-
+    <section 
+      className="testimonial-section"
+      onMouseEnter={() => setIsPaused(true)}
+      onMouseLeave={() => setIsPaused(false)}
+    >
       <div className="carousel-view">
-
         {/* Left peek */}
         <div className="side-card" />
 
@@ -68,24 +92,23 @@ export default function Testimonials() {
 
         {/* Right peek */}
         <div className="side-card" />
-
       </div>
 
       {/* Pagination */}
       <div className="pagination">
-        {Array.from({ length: testimonials.length - 1 }).map((_, idx) => (
+        {Array.from({ length: totalSlides }).map((_, idx) => (
           <button
             key={idx}
             className={`dot ${idx === activeIndex ? "active" : ""}`}
             onClick={() => setActiveIndex(idx)}
+            aria-label={`Go to slide ${idx + 1}`}
           />
         ))}
       </div>
 
       <style jsx>{`
-
         .testimonial-section {
-          padding: 0px 0;
+          padding: 60px 0;
           background: #fff;
           overflow: hidden;
         }
@@ -130,18 +153,14 @@ export default function Testimonials() {
           border: 1px solid #999;
           background: transparent;
           cursor: pointer;
+          transition: background 0.3s ease;
         }
 
         .dot.active {
           background: #ccc;
         }
 
-        /* =========================
-           MOBILE FIX (NO JS ISSUES)
-        ========================== */
-
         @media (max-width: 900px) {
-
           .carousel-view {
             flex-direction: column;
             gap: 20px;
@@ -161,23 +180,21 @@ export default function Testimonials() {
             max-width: 100%;
           }
         }
-
       `}</style>
-
     </section>
   );
 }
 
 /* =========================
-   CARD COMPONENT
+    CARD COMPONENT
 ========================= */
 
 function CardContent({ item }) {
+  if (!item) return null;
+
   return (
     <div className="content-fade-in">
-
       <div className="testimonial-header">
-
         <Image
           src={item.image}
           alt={item.name}
@@ -190,7 +207,6 @@ function CardContent({ item }) {
           <h3>{item.name}</h3>
           <p className="role">{item.role}</p>
         </div>
-
       </div>
 
       <div className="stars">★★★★★</div>
@@ -201,7 +217,6 @@ function CardContent({ item }) {
       />
 
       <style jsx>{`
-
         .content-fade-in {
           animation: fadeIn 0.4s ease;
         }
@@ -229,12 +244,13 @@ function CardContent({ item }) {
           font-size: 24px;
           line-height: 100%;
           letter-spacing: 0%;
-         
+          margin: 0;
         }
 
         .role {
           font-size: 24px;
           font-style: italic;
+          margin: 4px 0 0 0;
         }
 
         .stars {
@@ -248,17 +264,15 @@ function CardContent({ item }) {
           font-weight: 400;
           font-style: italic;
           font-size: 16px;
-     
+          margin: 0;
         }
 
-        .testimonial-text span {
+        .testimonial-text :global(span) {
           font-weight: 700;
-            font-family: 'Albert Sans', sans-serif;
-           font-size: 16px;
+          font-family: 'Albert Sans', sans-serif;
+          font-size: 16px;
         }
-
       `}</style>
-
     </div>
   );
 }
