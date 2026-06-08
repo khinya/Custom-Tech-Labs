@@ -133,6 +133,429 @@ background-color: #f5f5f5;
 }
 
 
+
+/* PhilosophyHeader.css */
+.philosophy-banner {
+  width: 100%;
+  background-color: #000000;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 67px; /* Matches your exact design height */
+  box-sizing: border-box;
+}
+
+.philosophy-title {
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+  font-family: 'Albert Sans', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0%;
+  opacity: 1;
+}
+.philosophy-subtitle {
+  color: #212529; /* Matches Bootstrap's standard 'text-dark' */
+  text-align: center;
+  font-family: 'Albert Sans', sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin-top: -4%; /* Retained your negative margin layout adjustment */
+  margin-bottom: 3rem; /* Matches Bootstrap's mb-5 */
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Card Grid Container */
+.philosophy-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 30px;
+  margin-right: 30px;
+  gap: 1.5rem; /* Matches Bootstrap's g-4 */
+}
+
+/* Responsive columns */
+.philosophy-col {
+  flex: 0 0 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .philosophy-col {
+    flex: 0 0 calc(50% - 0.75rem); /* Splitting into 2 columns minus gap */
+    max-width: calc(50% - 0.75rem);
+  }
+}
+
+/* Card Styling */
+.philosophy-card {
+  border: 1px solid #000000;
+  height: 100%;
+  padding: 0.5rem; /* Matches p-2 */
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  box-sizing: border-box;
+  padding-left: 25px;
+}
+
+/* Sectors Container Settings */
+.sectors-container {
+  background-color: #ffffff;
+  padding: 0px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Precise 1:1 Banner Frame Implementation */
+.sectors-main-banner {
+  background-color: #EEF430; 
+  width: 100%;
+  max-width: 857px; 
+  height: 66px;
+  border-radius: 3px;
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sectors-banner-title {
+  font-family: 'Albert Sans', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #000000;
+  margin: 0;
+  text-align: center;
+}
+
+/* Subheading Formatting Block */
+.sectors-subheading-box {
+  text-align: center;
+  padding: 0 16px;
+  
+}
+
+.sectors-subtitle-main {
+  font-family: 'Albert Sans', sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #000000;
+  margin: 0;
+}
+
+.sectors-subtitle-desc {
+  font-family: 'Albert Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: #000000;
+  margin: 8px 0 0 0;
+}
+
+/* Flexible Row Engine (Ensures 3 over 2 Card Display) */
+.sectors-flex-grid {
+ padding-bottom: 25px !important;
+  padding-top: 25px !important;
+  margin-bottom: 48px;
+  padding: 0 8px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  width: 1050px !important;      
+}
+
+
+/* Container Setup */
+.impact-section {
+  background-color: #ffffff;
+  padding: 60px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Precise 1:1 Banner Header Frame (1001px x 66px) */
+.impact-main-banner {
+  background-color: #EEF430;
+  width: 100%;
+  max-width: 1001px;
+  height: 66px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 48px auto;
+}
+
+.impact-banner-title {
+  font-family: 'Albert Sans', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #000000;
+  margin: 0;
+  text-align: center;
+}
+
+/* List Matrix Wrapper */
+.impact-list-container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Impact Rows Matching Figma Box Specifications */
+.impact-list-row {
+  background-color: #FBFBFB;
+  width: 100%;
+  min-height: 55px;
+  border: 1.5px solid #EEF430;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  padding: 12px 24px;
+  gap: 16px;
+}
+
+/* Custom Yellow Circle Vector Enclosures */
+.impact-icon-circle {
+  width: 24px;
+  height: 24px;
+  background-color: #EEF430;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.impact-row-text {
+  font-family: 'Albert Sans', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #000000;
+  margin: 0;
+}
+
+/* CTA Bottom Block Styling Rules */
+.impact-cta-wrapper {
+  background-color: #D9D9D9;
+  width: 100%;
+  max-width: 1111px;
+  margin: 54px auto 0 auto;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.impact-cta-inner-black {
+  background-color: #000000;
+  width: 100%;
+  padding: 16px 24px;
+  text-align: center;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+.impact-cta-inner-black h2 {
+  color: #ffffff;
+  font-family: 'Albert Sans', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130%;
+  margin: 0;
+}
+
+.impact-cta-inner-black span {
+  color: #EEF430;
+}
+
+.impact-cta-subtext {
+  font-family: 'Albert Sans', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000000;
+  margin: 0 0 24px 0;
+  text-align: center;
+}
+
+/* Action Button Layout Specs */
+.impact-action-buttons-row {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+@media (max-width: 576px) {
+  .impact-action-buttons-row {
+    flex-direction: column;
+  }
+}
+
+.impact-btn-link {
+  background-color: #EEF430;
+  width: 180px;
+  height: 46px;
+  border-radius: 3px;
+  font-family: 'Albert Sans', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #000000;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease-in-out;
+  border: none;
+}
+
+.impact-btn-link:hover {
+  transform: scale(1.02);
+  color: #000000;
+}
+
+/* Exact Card Form Factor Specs */
+.sector-display-card {
+  background-color: #f5f5f5; 
+  width: 237px; 
+  height: 163px; 
+  border: 1.5px solid #EEF430;
+  border-radius: 2px;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.sector-display-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+.sector-card-image-wrap {
+  width: 100%;
+  height: 65px;
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.sector-card-title {
+  font-family: 'Albert Sans', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #000000;
+  margin: 0;
+  text-align: center;
+}
+
+/* Footer Section Formatting Rules */
+.sectors-footer-box {
+  width: 100%;
+  text-align: center;
+  padding: 0 16px;
+      margin-bottom: 30px;
+}
+
+.sectors-footer-text {
+  font-family: 'Albert Sans', sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0%;
+  color: #000000;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Separator Borders Accent Accentuation */
+.sectors-bottom-divider {
+  width: 100%;
+  border-top: 20px solid #EEF430;
+  border-bottom: 20px solid #000000;
+}
+
+/* Hover Effect implementation */
+.philosophy-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Yellow Icon Wrapper */
+.philosophy-icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-bottom: 1.3rem; /* Matches mb-4 */
+  width: 56px; /* Updated to match your exact design spec width */
+  height: 50px; /* Updated to match your exact design spec height */
+  background-color: #EEF430;
+}
+
+/* Headings */
+.philosophy-card-title {
+  color: #000000;
+  margin-top: 0;
+ 
+  font-family: 'Albert Sans', sans-serif;
+  font-weight: 700;
+  font-size: 16px; /* Synced to your design spec */
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+/* Description Text */
+.philosophy-card-desc {
+  color: #979797; /* Updated from text-secondary to your exact color code */
+  margin: 0;
+  font-family: 'Albert Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px; /* Synced to your design spec */
+  line-height: 140%; /* Boosted slightly from 100% for readability on paragraphs */
+  letter-spacing: 0%;
+}
+
 /* ==========================================================================
 3. HEADER & NAVIGATION
 ========================================================================== */
@@ -993,7 +1416,6 @@ font-family: "Albert Sans", sans-serif;
 font-weight: 500;
 }
 .impact-section {
-background: #f3f3f3;
 position: relative;
 }
 .strip {
